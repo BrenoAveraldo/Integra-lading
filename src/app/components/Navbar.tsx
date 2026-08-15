@@ -6,7 +6,7 @@ import { Linkedin, Youtube, Instagram } from "lucide-react";
 import { WhatsappIcon } from "./shared/WhatsappIcon";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#servicos" },
+  { label: "Home", href: "#inicio" },
   { label: "Produtos", href: "#veiculos" },
   { label: "Sobre", href: "#sobre" },
 ];
@@ -61,7 +61,7 @@ export function Navbar() {
   // Considera um link "ativo" se a aba correspondente estiver aberta
   // (Serviços é tratado como parte da aba Início).
   const isActive = (href: string) => {
-    if (href === "#servicos") return activeTab === "inicio";
+    if (href === "#inicio") return activeTab === "inicio";
     if (href === "#sobre") return activeTab === "sobre";
     if (href === "#veiculos") return activeTab === "veiculos";
     if (href === "#contato") return activeTab === "contato";

@@ -5,6 +5,12 @@ import { LocationSection } from "./LocationSection";
 
 const CONTACT_EMAIL = "integra.servicos.ma@gmail.com";
 
+// ID do formulário no Formspree (ex: "myzknbjq").
+// Crie a conta em https://formspree.io, crie um formulário e cole o ID aqui,
+// ou defina VITE_FORMSPREE_FORM_ID no seu arquivo .env (não versionar o .env).
+const FORMSPREE_FORM_ID = import.meta.env.VITE_FORMSPREE_FORM_ID || "SEU_FORM_ID_AQUI";
+const FORMSPREE_ENDPOINT = `https://formspree.io/f/${FORMSPREE_FORM_ID}`;
+
 interface ContactFormState {
   name: string;
   email: string;
@@ -12,16 +18,18 @@ interface ContactFormState {
   message: string;
 }
 
+type SubmitStatus = "idle" | "sending" | "sent" | "error";
+
 function ContactForm() {
   const [form, setForm] = useState<ContactFormState>({ name: "", email: "", phone: "", message: "" });
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<SubmitStatus>("idle");
   const [error, setError] = useState<string | null>(null);
 
   const update = (field: keyof ContactFormState) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [field]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
 
@@ -35,20 +43,31 @@ function ContactForm() {
       return;
     }
 
-    // Sem backend próprio: abrimos o app de e-mail do usuário já preenchido
-    // com os dados do formulário, endereçado para o e-mail da Integra.
-    const subject = encodeURIComponent(`Contato pelo site — ${form.name}`);
-    const bodyLines = [
-      `Nome: ${form.name}`,
-      `E-mail: ${form.email}`,
-      form.phone.trim() ? `Telefone: ${form.phone}` : null,
-      "",
-      form.message,
-    ].filter(Boolean);
-    const body = encodeURIComponent(bodyLines.join("\n"));
+    setStatus("sending");
 
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-    setSent(true);
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { Accept: "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone || undefined,
+          message: form.message,
+          _subject: `Contato pelo site — ${form.name}`,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus("sent");
+      } else {
+        setStatus("error");
+        setError(`Não foi possível enviar agora. Tente novamente ou escreva direto para ${CONTACT_EMAIL}.`);
+      }
+    } catch {
+      setStatus("error");
+      setError(`Falha de conexão. Tente novamente ou escreva direto para ${CONTACT_EMAIL}.`);
+    }
   };
 
   const inputStyle: React.CSSProperties = {
@@ -103,12 +122,11 @@ function ContactForm() {
           Preencha o formulário abaixo
         </p>
 
-        {sent ? (
+        {status === "sent" ? (
           <div style={{ display: "flex", alignItems: "center", gap: 12, background: "rgba(200,16,46,0.1)", border: "1px solid rgba(200,16,46,0.3)", padding: "20px 24px" }}>
             <CheckCircle2 size={22} color="#C8102E" style={{ flexShrink: 0 }} />
             <p style={{ color: "#fff", fontSize: 13, fontFamily: "'Open Sans', sans-serif", margin: 0, lineHeight: 1.7 }}>
-              Seu aplicativo de e-mail deve abrir em instantes com a mensagem preenchida. Caso isso não
-              aconteça, envie diretamente para <strong>{CONTACT_EMAIL}</strong>.
+              Mensagem enviada com sucesso! Nossa equipe vai te responder em breve.
             </p>
           </div>
         ) : (
@@ -147,6 +165,7 @@ function ContactForm() {
 
             <button
               type="submit"
+              disabled={status === "sending"}
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -159,15 +178,16 @@ function ContactForm() {
                 fontWeight: 700,
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
-                cursor: "pointer",
+                cursor: status === "sending" ? "not-allowed" : "pointer",
+                opacity: status === "sending" ? 0.7 : 1,
                 borderRadius: 2,
                 fontFamily: "'Poppins', sans-serif",
-                transition: "background 0.2s, transform 0.2s",
+                transition: "background 0.2s, transform 0.2s, opacity 0.2s",
               }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#a50d24"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+              onMouseEnter={(e) => { if (status !== "sending") { e.currentTarget.style.background = "#a50d24"; e.currentTarget.style.transform = "translateY(-2px)"; } }}
               onMouseLeave={(e) => { e.currentTarget.style.background = "#C8102E"; e.currentTarget.style.transform = "translateY(0)"; }}
             >
-              Enviar Mensagem <Send size={15} />
+              {status === "sending" ? "Enviando..." : "Enviar Mensagem"} <Send size={15} />
             </button>
           </form>
         )}
