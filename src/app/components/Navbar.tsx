@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router";
-import integraLogo from "../../imports/images/logo/INTEGRA.png";
+import integraLogo from "../../imports/images/Logo/INTEGRA.png";
 import { useNavigation } from "../NavigationContext";
 import { Linkedin, Youtube, Instagram } from "lucide-react";
 import { WhatsappIcon } from "./shared/WhatsappIcon";

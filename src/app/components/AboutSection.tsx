@@ -1,4 +1,4 @@
-import fachadaImg from "../../imports/images/logo/FOTO-FACHADA.png";
+import fachadaImg from "../../imports/images/Logo/FOTO-FACHADA.png";
 import { Award, Cog, Handshake, ShieldCheck } from "lucide-react";
 import VIDEOPECA from "../../imports/videos/PEÇAS-VIDEO-AGRALE-INTEGRA_.mp4";
 import { SectionTag } from "./shared/SectionTag";

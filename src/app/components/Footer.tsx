@@ -1,4 +1,4 @@
-import integraLogo from "../../imports/images/logo/INTEGRA.png";
+import integraLogo from "../../imports/images/Logo/INTEGRA.png";
 import { MapPin, Mail, Phone, Clock, Instagram, Linkedin, Youtube, ArrowUp } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useNavigation } from "../NavigationContext";

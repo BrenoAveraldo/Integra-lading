@@ -6,7 +6,7 @@ import busHero from "../../imports/images/onibus/Onibus hero.png";
 import truckHero from "../../imports/images/caminhao/caminhao hero.png";
 import tratorHero from "../../imports/images/trator/Trator hero.png";
 import marruaHero from "../../imports/images/marrua/MARRUA HERO.png";
-import fachadaHero from "../../imports/images/logo/FOTO-FACHADA.png";
+import fachadaHero from "../../imports/images/Logo/FOTO-FACHADA.png";
 
 // Slides que apontam para uma categoria real do catálogo usam "to" (rota),
 // o último slide (institucional) usa "href" (âncora dentro da própria Home).
