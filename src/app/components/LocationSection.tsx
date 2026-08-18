@@ -1,11 +1,10 @@
 import { MapPin, Clock, Phone } from "lucide-react";
 import { SectionTag } from "./shared/SectionTag";
 
-// Dados de referência — troque pelo endereço, telefone e horário reais da Integra.
-const ADDRESS = "Av. Exemplo, 1234 — Centro, São Luís/MA";
-const PHONE = "(98) 0000-0000";
+const ADDRESS = "Rodovia Engenheiro Emiliano Macieira, Km 06, nº 104, Galpão 02, CEP 65095-602";
+const PHONE = "(96) 3276-5565";
 const HOURS = ["Segunda a sexta: 8h às 18h", "Sábado: 8h às 12h"];
-const MAPS_QUERY = encodeURIComponent(ADDRESS);
+const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`;
 
 export function LocationSection() {
   return (
@@ -34,56 +33,25 @@ export function LocationSection() {
               <InfoRow icon={Phone} title="Telefone / WhatsApp" lines={[PHONE]} />
               <InfoRow icon={Clock} title="Horário de atendimento" lines={HOURS} />
             </div>
-
-            <a
-              href={`https://www.google.com/maps/search/?api=1&query=${MAPS_QUERY}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 8,
-                marginTop: 32,
-                background: "#C8102E",
-                color: "#fff",
-                padding: "14px 30px",
-                fontSize: 13,
-                fontWeight: 700,
-                letterSpacing: "0.07em",
-                textTransform: "uppercase",
-                textDecoration: "none",
-                fontFamily: "'Poppins', sans-serif",
-              }}
-            >
-              Ver no mapa ›
-            </a>
           </div>
 
-          {/* Placeholder de mapa — troque por um <iframe> do Google Maps com as
-              coordenadas reais assim que o endereço estiver confirmado. */}
+          {/* Mini mapa real do Google Maps (embed público, sem necessidade de API key). */}
           <div
             style={{
               height: 380,
-              background: "#e5e5e5",
               border: "1px solid #ddd",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 12,
-              position: "relative",
               overflow: "hidden",
             }}
           >
-            <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                backgroundImage: "repeating-linear-gradient(0deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 1px, transparent 1px, transparent 32px), repeating-linear-gradient(90deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 1px, transparent 1px, transparent 32px)",
-              }}
+            <iframe
+              title="Localização da Integra no Google Maps"
+              src={MAPS_EMBED_SRC}
+              width="100%"
+              height="100%"
+              style={{ border: 0, display: "block" }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
-            <MapPin size={40} color="#C8102E" strokeWidth={1.5} style={{ position: "relative" }} />
-            <span style={{ position: "relative", fontSize: 13, color: "#888", fontFamily: "'Open Sans', sans-serif" }}>{ADDRESS}</span>
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ export function HomePage() {
 
       {/* Aba Sobre — offset para compensar o header fixo, já que não há mais o Hero acima */}
       {activeTab === "sobre" && (
-        <div className="pt-[68px] md:pt-[104px]">
+        <div>
           <AboutSection />
         </div>
       )}
@@ -43,14 +43,14 @@ export function HomePage() {
       {/* Aba Veículos — mostra a vitrine com acesso rápido; o catálogo completo
           vive nas páginas /:categoria, /:categoria/:subcategoria e /veiculo/:slug */}
       {activeTab === "veiculos" && (
-        <div className="pt-[68px] md:pt-[104px]">
+        <div>
           <VehicleShowcase />
         </div>
       )}
 
       {/* Aba Contato */}
       {activeTab === "contato" && (
-        <div className="pt-[68px] md:pt-[104px]">
+        <div>
           <ContactSection />
         </div>
       )}
