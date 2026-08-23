@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import truckImg from "../../imports/images/caminhao/caminhao hero.png";
 import truckCard from "../../imports/images/caminhao/CAMINH_O.png";
-import c1Img from "../../imports/images/caminhao/CAMINHÃO AGRALE A 8700 - leve.png";
+import c1Img from "../../imports/images/caminhao/agarale8700-card-pequeno.jpeg";
 import chassiImg from "../../imports/images/onibus/CHASSI-PARA-ONIBUS.png";
 import busImg from "../../imports/images/onibus/Onibus hero.png";
 import tratorImg from "../../imports/images/trator/Trator hero.png";

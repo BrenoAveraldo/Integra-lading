@@ -74,9 +74,9 @@ export function ProductHero({ vehicle }: ProductHeroProps) {
         </div>
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "32px 0" }}>
           <img
-            src={vehicle.image}
+            src={vehicle.image2}
             alt={vehicle.name}
-            style={{ width: "100%", maxWidth: 460, marginTop: 21, objectFit: "contain", filter: "drop-shadow(0 12px 32px rgba(0,0,0,0.4))" }}
+            style={{ maxWidth: 850, marginTop: 21, objectFit: "contain" }}
           />
         </div>
       </div>

@@ -27,8 +27,13 @@ export function ProductPage() {
       />
 
       <ProductHero vehicle={vehicle} />
-      <ProductSpecs specifications={vehicle.specifications} highlights={vehicle.highlights} />
-      <ProductGallery images={vehicle.gallery} alt={vehicle.name} />
+      <ProductSpecs
+        specifications={vehicle.specifications}
+        highlights={vehicle.highlights}
+        datasheetUrl={vehicle.datasheetUrl}
+        dimensionsUrl={vehicle.dimensionsUrl}
+      />
+      <ProductGallery images={vehicle.gallery ?? []} alt={vehicle.name} />
       <ProductCTA vehicleName={vehicle.name} />
     </div>
   );

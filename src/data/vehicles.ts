@@ -17,11 +17,24 @@ import { TagVariant, TAG_VARIANT_ORDER } from "../app/components/shared/Tag";
 
 // ---- Imagens já existentes no projeto (src/imports) -----------------------
 // Caminhões
-import caminhaoA10000 from "../imports/images/caminhao/CAMINHAO AGREALE A 10000 -LEVE.png";
-import caminhaoLeveGenerico from "../imports/images/caminhao/CAMINHAO-LEVE.png";
+import caminhaoA10000 from "../imports/images/caminhao/Agrale10000-card-pequeno.jpeg";
+import caminhaoA10000galeria from "../imports/images/caminhao/Agrale-10000-galeria.jpg";
+import caminhaoA10000galeria2 from "../imports/images/caminhao/Agrale-10000-galeria2.jpg";
+import caminhaoA10000galeria3 from "../imports/images/caminhao/Caminhao-A10000-4X4-Militar-Galeria.jpeg";
+
+import caminhaoLeveGenerico from "../imports/images/caminhao/agarale8700-card-pequeno.jpeg";
 import caminhaoCard from "../imports/images/caminhao/CAMINH_O.png";
-import caminhaoSemipesado from "../imports/images/caminhao/SEMIPESADOS.png";
+import caminhaoSemipesado from "../imports/images/caminhao/agarale8700-card-pequeno.jpeg";
+import caminhao8700 from "../imports/images/caminhao/agarale8700-card-pequeno.jpeg";
+import caminhao8700galeria from "../imports/images/caminhao/agrale-8700-galeria.jpg";
+import caminhao8700galeria2 from "../imports/images/caminhao/agrale-8700-galeria2.jpg";
 import caminhaoHero from "../imports/images/caminhao/caminhao hero.png";
+import caminhao10004x4 from"../imports/images/caminhao/Agrale-100004x4-card-pequeno.jpeg";
+import caminhao11000 from "../imports/images/caminhao/agraçe-11000-gas.jpeg";
+import caminhaoEXT from "../imports/images/caminhao/ext-4x4-card-pequeno.jpeg";
+import caminhaoEXTgaleria from "../imports/images/caminhao/Caminhão-EXT-gaelria.jpg";
+
+
 
 // Ônibus / Chassis
 import chassiOnibus from "../imports/images/onibus/CHASSI-PARA-ONIBUS.png";
@@ -35,7 +48,8 @@ import motorhomeMA110 from "../imports/images/onibus/MOTORHOME MA11.0.png";
 import onibusHero from "../imports/images/onibus/Onibus hero.png";
 
 // Tratores
-import trator4125 from "../imports/images/trator/trator 4125.jpeg";
+import Principal4125 from "../imports/images/trator/TRATOR-4125-2.png";
+import trator4125 from "../imports/images/trator/4125.jpeg";
 import trator4125Cargo from "../imports/images/trator/TRATOR AGRICOLA 4125 CARGO.png";
 import trator4125Coletor from "../imports/images/trator/TRATOR AGRICOLA 4125 COLETOR.png";
 import trator4233 from "../imports/images/trator/TRATOR AGRICOLA 4233.png";
@@ -91,7 +105,10 @@ export interface Vehicle {
   slug: string;
   tagline: string;
   image: string;
-  gallery: string[];
+  image2: string;
+  datasheetUrl?: string;
+  dimensionsUrl?: string;
+  gallery?: string[];
   description: string;
   specifications: Record<string, string>;
   highlights: string[];
@@ -182,28 +199,29 @@ export const VEHICLES: Vehicle[] = [
     name: "Agrale A 8.700",
     slug: "agrale-a-8700",
     tagline: "Agilidade urbana com baixo custo operacional",
-    image: caminhaoLeveGenerico,
-    gallery: [caminhaoLeveGenerico, caminhaoA10000, caminhaoCard],
+    image: caminhao8700,
+    image2: caminhao8700,
+    datasheetUrl: "/datasheets/caminh-o-agrale-a-8-700-atualizado-manual.pdf",
+    dimensionsUrl: "/dimensions/Dimensoes Caminhao A8700.jpg",
+    gallery: [caminhao8700galeria2, caminhao8700galeria],
     description:
       "O Agrale A 8.700 é a escolha ideal para entregas urbanas e distribuição regional, unindo agilidade em centros urbanos, economia de combustível e versatilidade para diferentes tipos de implemento.",
     specifications: {
-      "Motorização": "MWM 4 cilindros turbodiesel",
-      "Potência": "170 cv",
-      "Torque": "Consultar ficha técnica",
-      "Transmissão": CONSULTAR,
+      "Motorização": "CUMMINS F3.8",
+      "Potência": "175 Cv",
+      "Torque": "600 Nm / 1.100 a 1.800 rpm",
       "Peso Bruto Total (PBT)": "8.700 kg",
-      "Capacidade de carga": CONSULTAR,
-      "Entre-eixos": CONSULTAR,
-      "Tanque de combustível": CONSULTAR,
+      "Capacidade Máxima de tração": "11.000 Kg",
+      "Tanque de combustível": "150 L"
     },
     highlights: [
       "Agilidade em centros urbanos",
       "Economia de combustível",
       "Baixo custo operacional",
-      "Versatilidade para diferentes implementos",
+      "Completo de série",
     ],
   },
-  {
+{
     id: "caminhao-a-10000",
     category: "caminhoes",
     subcategory: "leves",
@@ -211,18 +229,18 @@ export const VEHICLES: Vehicle[] = [
     slug: "agrale-a-10000",
     tagline: "Robustez e economia para o dia a dia da distribuição",
     image: caminhaoA10000,
-    gallery: [caminhaoA10000, caminhaoLeveGenerico, caminhaoCard],
+    image2: caminhaoLeveGenerico,
+    datasheetUrl: "/datasheets/caminh-o-agrale-a-10-000-atualizado - fixa tecnica.pdf",
+    gallery: [caminhaoA10000galeria, caminhaoA10000galeria2, caminhaoA10000galeria3],
     description:
       "Reconhecido pela economia, robustez e durabilidade, o Agrale A 10.000 tem baixo custo de manutenção e atende às necessidades de operações urbanas e de distribuição regional.",
     specifications: {
-      "Motorização": "MWM 4 cilindros turbodiesel",
-      "Potência": "185 cv",
-      "Torque": CONSULTAR,
-      "Transmissão": CONSULTAR,
-      "Peso Bruto Total (PBT)": "10.000 kg",
-      "Capacidade de carga": CONSULTAR,
-      "Entre-eixos": CONSULTAR,
-      "Tanque de combustível": CONSULTAR,
+      "Motorização": "CUMMINS F3.8",
+      "Potência": "175 cv",
+      "Torque": "600 Nm / 1.100 a 1.800 rpm",
+      "Peso Bruto Total (PBT)": "10.700 Kg",
+      "Capacidade de carga": "13.000 Kg",
+      "Tanque de combustível": "150 L"
     },
     highlights: [
       "Baixo custo de manutenção",
@@ -232,26 +250,52 @@ export const VEHICLES: Vehicle[] = [
     ],
   },
   {
+    id: "caminhao-10000-4x4",
+    category: "caminhoes",
+    subcategory: "leves",
+    name: "Agrale A 10.000 4x4",
+    slug: "agrale-a-10000-4x4",
+    tagline: "O único da categoria com tração integral e opção de câmbio automático, pronto para vencer qualquer terreno.",
+    image: caminhao10004x4,
+    image2: caminhaoLeveGenerico,
+    datasheetUrl: "/datasheets/caminh-o-agrale-a-10-000-4x4-atualizado - fixa tecnica.pdf",
+    dimensionsUrl: "/dimensions/caminhao A 10.000 4x4.jpg",
+    description:
+      "O Agrale A 10.000 4x4 é o único caminhão da categoria com tração integral (4x2H, 4x4H e 4x4L) e opção de câmbio automático Allison, feito para enfrentar terrenos difíceis sem abrir mão de conforto e tecnologia. Com motor Cummins F 3.8 Euro VI, suspensão elevada e ângulos de entrada e saída ampliados, é a escolha certa para operações off-road, obras e áreas de difícil acesso.",
+    specifications: {
+      "Motorização": "CUMMINS F3.8",
+      "Potência": "175 Cv",
+      "Torque": "600 Nm / 1.100 a 1.800 rpm",
+      "Peso Bruto Total (PBT)": "10.700 kg",
+      "CMT - Capacidade máxima de tração": "13.000 kg",
+      "Tanque de combustível": "150 L",
+    },
+    highlights: [
+      "Agilidade em centros urbanos",
+      "Economia de combustível",
+      "Baixo custo operacional",
+      "Versatilidade para diferentes implementos",
+    ],
+  },
+  {
     id: "caminhao-a-11000-gas",
     category: "caminhoes",
     subcategory: "leves",
     name: "Agrale A 11.000 Gás",
     slug: "agrale-a-11000-gas",
     tagline: "Elo estratégico entre centros de distribuição e grandes cidades",
-    image: caminhaoCard,
-    gallery: [caminhaoCard, caminhaoA10000, caminhaoLeveGenerico],
+    image: caminhao11000,
+    image2: caminhaoLeveGenerico,
+    datasheetUrl: "/datasheets/caminh-o-agrale-a-11-000-g-s-atualizado -  Fixa tecnica.pdf",
     description:
       "Elo estratégico entre os centros de distribuição e as grandes cidades, o A 11.000 Gás entrega agilidade, eficiência e sustentabilidade. Com motor movido a GNV e Biometano, reduz emissões e ruído, tornando o transporte urbano mais limpo e inteligente.",
     specifications: {
       "Motor": "WP4.6NNG200E60",
       "Potência": "195 cv (143 kW) a 2.300 rpm",
       "Torque": "642 Nm a 1.400 rpm",
-      "Combustível": "GNV / Biometano",
-      "Transmissão": CONSULTAR,
+      "Tanque de combustível": "330 L (Três Cilindros)",
       "Peso Bruto Total (PBT)": "10.700 kg",
-      "Capacidade de carga": CONSULTAR,
-      "Entre-eixos": CONSULTAR,
-      "Tanque de combustível": CONSULTAR,
+      "CMT - Capacidade máxima de tração": "13.000 kg",
     },
     highlights: [
       "Motor a GNV/Biometano — menos emissões e ruído",
@@ -261,13 +305,44 @@ export const VEHICLES: Vehicle[] = [
     ],
   },
   {
+    id: "caminhao-ext-4x4",
+    category: "caminhoes",
+    subcategory: "leves",
+    name: "Agrale EXT 4x4\n(Truck Home)",
+    slug: "agrale-EXT",
+    tagline: " une robustez, desempenho e liberdade em um só veículo",
+    image: caminhaoEXT,
+    image2: caminhaoLeveGenerico,
+    datasheetUrl: "/datasheets/caminh-o-agrale-ext-4x4-truck-home--atualizado - fixa tecnica.pdf",
+    gallery: [caminhaoEXTgaleria],
+    description:
+      "O Agrale A 8.700 é a escolha ideal para entregas urbanas e distribuição regional, unindo agilidade em centros urbanos, economia de combustível e versatilidade para diferentes tipos de implemento.",
+    specifications: {
+      "Motorização": "Cummins F3.8",
+      "Potência": "129 kW (175cv) a 2500 rpm",
+      "Torque": "600Nm / 1.100 - 1.800 rpm",
+      "Transmissão": "Automática de 6 Marchas",
+      "Peso Bruto Total (PBT)": " 10.000 Kg",
+      "CMT - Capacidade Máxima de tração": "13.000 Kg",
+    },
+    highlights: [
+      "Agilidade em centros urbanos",
+      "Economia de combustível",
+      "Baixo custo operacional",
+      "Versatilidade para diferentes implementos",
+    ],
+  },
+  
+  {
     id: "caminhao-14000",
     category: "caminhoes",
-    subcategory: "medios",
+    subcategory: "  ",
     name: "Agrale 14.000",
     slug: "agrale-14000",
     tagline: "Força e eficiência para aplicações de maior exigência",
     image: caminhaoA10000,
+    image2: caminhaoLeveGenerico,
+    datasheetUrl: "/datasheets/caminh-o-agrale-a-8-700-atualizado-manual.pdf",
     gallery: [caminhaoA10000, caminhaoCard],
     description:
       "Desenvolvido para aplicações que exigem força, robustez e eficiência operacional, o Agrale 14.000 tem cabine com conforto, ergonomia e itens de segurança de série, elevando a produtividade diária do motorista.",
@@ -296,6 +371,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "agrale-15000",
     tagline: "Desempenho consistente para operações urbanas e intermunicipais",
     image: caminhaoCard,
+    image2: caminhaoLeveGenerico,
     gallery: [caminhaoCard, caminhaoA10000],
     description:
       "Com elevada capacidade de carga e facilidade de encarroçamento, o Agrale 15.000 entrega desempenho consistente, confiabilidade e excelente custo operacional em transporte urbano e intermunicipal.",
@@ -324,6 +400,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "agrale-17000",
     tagline: "Robustez e capacidade de carga elevada",
     image: caminhaoSemipesado,
+    image2: caminhaoLeveGenerico,
     gallery: [caminhaoSemipesado, caminhaoHero],
     description:
       "Desenvolvido para operações de maior exigência, o Agrale 17.000 combina robustez, capacidade de carga elevada e eficiência operacional, com cabine projetada com foco em ergonomia, conforto e segurança.",
@@ -352,6 +429,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "agrale-19000",
     tagline: "O topo de linha para as operações mais exigentes",
     image: caminhaoHero,
+    image2: caminhaoLeveGenerico,
     gallery: [caminhaoHero, caminhaoSemipesado],
     description:
       "O Agrale 19.000 é o modelo de maior capacidade da linha, indicado para operações rodoviárias e industriais que exigem desempenho em longas jornadas e confiabilidade comprovada.",
@@ -382,6 +460,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "chassi-ma-9-2",
     tagline: "Mobilidade com confiança para o transporte urbano e escolar",
     image: microbusMA92,
+    image2: caminhaoLeveGenerico,
     gallery: [microbusMA92, chassiMicrobus, chassiOnibus],
     description:
       "Líder há mais de 25 anos no segmento de chassi para micro-ônibus, o MA 9.2 é referência em versatilidade de encarroçamento, economia e capacidade de adaptação a diferentes operações urbanas.",
@@ -404,6 +483,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "chassi-ma-10-0",
     tagline: "Robustez e economia para o transporte coletivo",
     image: microbusMA100,
+    image2: caminhaoLeveGenerico,
     gallery: [microbusMA100, chassiMicrobus, chassiOnibus],
     description:
       "Chassi projetado exclusivamente para o transporte de pessoas, o MA 10.0 une robustez, tecnologia e economia operacional para diferentes necessidades do transporte coletivo.",
@@ -426,6 +506,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "chassi-ma-11-0-gas",
     tagline: "Transporte coletivo mais limpo e econômico",
     image: chassiMicrobus,
+    image2: caminhaoLeveGenerico,
     gallery: [chassiMicrobus, microbusMA92, microbusMA100],
     description:
       "Versão a gás da linha Microbus, o MA 11.0 Gás reduz custo operacional e emissões, mantendo a robustez e a confiabilidade que consagraram a Agrale no segmento de chassis para ônibus.",
@@ -448,6 +529,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "chassi-ma-17-0",
     tagline: "Segurança e eficiência para o transporte de médio porte",
     image: midibusMA170,
+    image2: caminhaoLeveGenerico,
     gallery: [midibusMA170, chassiMidibus, chassiOnibus],
     description:
       "A solução Agrale para o transporte de passageiros em médio porte. Projetado para operações que exigem maior capacidade de transporte, o MA 17.0 combina robustez, conforto e eficiência em aplicações urbanas, rodoviárias ou de fretamento.",
@@ -470,6 +552,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "chassi-ma-11-0-motorhome",
     tagline: "O chassi que acompanha grandes jornadas",
     image: motorhomeMA110,
+    image2: caminhaoLeveGenerico,
     gallery: [motorhomeMA110, chassiMotorhome, chassiOnibus],
     description:
       "Chassi exclusivo para motorhome, une resistência, segurança e tecnologia. Projetado para atender às exigências de longas viagens e diferentes tipos de terreno, garantindo a liberdade do campismo com a confiança de quem entende de mobilidade.",
@@ -493,16 +576,15 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-4125",
     tagline: "Potência e robustez para o dia a dia do campo",
     image: trator4125,
+    image2: Principal4125,
     gallery: [trator4125, trator4125Cargo, trator4125Coletor],
     description:
       "Trator compacto e versátil, o 4125 é indicado para pequenas e médias propriedades, unindo potência, economia de combustível e tecnologia para aumentar a produtividade no campo.",
     specifications: {
-      "Motorização": "3 cilindros turbodiesel",
-      "Potência": "125 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x2 / 4x4 (conforme versão)",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": "Agrale 3 cilindros",
+      "Potência": "25,0 cv (18,4 kW) a 2.400 rpm",
+      "Torque": "9,43 kgf.m (92 Nm) a 1.600 rpm",
+      "Raio de Giro": "Menor da Categoria",
     },
     highlights: ["Potência e robustez", "Tecnologia de ponta", "Economia de combustível", "Versatilidade de aplicações"],
   },
@@ -514,6 +596,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-4125-cargo",
     tagline: "Versão preparada para transporte de carga na propriedade",
     image: trator4125Cargo,
+    image2: caminhaoLeveGenerico,
     gallery: [trator4125Cargo, trator4125, trator4125Coletor],
     description:
       "Versão do 4125 equipada para transporte de carga dentro da propriedade rural, mantendo a robustez e a economia que caracterizam a linha agrícola Agrale.",
@@ -535,6 +618,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-4125-coletor",
     tagline: "Projetado para operações de coleta",
     image: trator4125Coletor,
+    image2: caminhaoLeveGenerico,
     gallery: [trator4125Coletor, trator4125, trator4125Cargo],
     description:
       "Versão especializada do 4125 para operações de coleta, combinando a mesma robustez mecânica da linha com adaptações voltadas à aplicação específica.",
@@ -556,6 +640,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-4233",
     tagline: "Equilíbrio entre potência e agilidade",
     image: trator4233,
+    image2: caminhaoLeveGenerico,
     gallery: [trator4233, trator4125],
     description:
       "O Trator 4233 entrega bom equilíbrio entre potência e agilidade, indicado para operações agrícolas de médio porte que exigem versatilidade de implementos.",
@@ -577,6 +662,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-525",
     tagline: "Compacto e versátil para pequenas propriedades",
     image: trator525,
+    image2: caminhaoLeveGenerico,
     gallery: [trator525, trator4233],
     description:
       "Compacto e ágil, o Trator 525 é indicado para pequenas propriedades, pomares e operações que exigem manobrabilidade sem abrir mão de robustez mecânica.",
@@ -598,6 +684,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-540-xt",
     tagline: "Mais tecnologia para operações de precisão",
     image: trator540TX,
+    image2: caminhaoLeveGenerico,
     gallery: [trator540TX, trator575Compact],
     description:
       "O 540 XT traz tecnologia embarcada e conforto para o operador, indicado para propriedades que buscam mais precisão e produtividade nas operações do dia a dia.",
@@ -619,6 +706,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-575-compact",
     tagline: "Compacto, ágil e potente",
     image: trator575Compact,
+    image2: caminhaoLeveGenerico,
     gallery: [trator575Compact, trator575Super],
     description:
       "Versão compacta da linha 575, ideal para operações em espaços reduzidos, entrelinhas de cultivo e propriedades que exigem agilidade sem perder potência.",
@@ -640,6 +728,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-575-super",
     tagline: "Mais força para operações exigentes",
     image: trator575Super,
+    image2: caminhaoLeveGenerico,
     gallery: [trator575Super, trator575Compact],
     description:
       "Versão Super da linha 575, com reforços mecânicos para operações mais exigentes, mantendo a economia e a confiabilidade que marcam a linha agrícola Agrale.",
@@ -661,6 +750,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-5105",
     tagline: "Potência intermediária para produtividade no campo",
     image: trator5105,
+    image2: caminhaoLeveGenerico,
     gallery: [trator5105, trator6185],
     description:
       "O Trator 5105 oferece potência intermediária, ideal para operações de preparo de solo, plantio e tração de implementos de médio porte.",
@@ -682,6 +772,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-6185",
     tagline: "Alta potência para grandes operações",
     image: trator6185,
+    image2: caminhaoLeveGenerico,
     gallery: [trator6185, trator7215],
     description:
       "Com alta potência, o Trator 6185 é indicado para grandes propriedades e operações que demandam tração de implementos pesados com eficiência.",
@@ -703,6 +794,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-7215",
     tagline: "O topo de linha da Agrale para grandes propriedades",
     image: trator7215,
+    image2: caminhaoLeveGenerico,
     gallery: [trator7215, trator6185],
     description:
       "Modelo topo de linha da Agrale, o 7215 entrega máxima potência e tecnologia para grandes propriedades, com foco em produtividade e economia operacional.",
@@ -724,6 +816,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-rebocador-4100",
     tagline: "Versatilidade para a movimentação de cargas",
     image: tratorIndustrial,
+    image2: caminhaoLeveGenerico,
     gallery: [tratorIndustrial, tratorHero],
     description:
       "A linha de tratores industriais Agrale oferece força, eficiência e confiabilidade para a movimentação de cargas em ambientes industriais, logísticos e operações de pátio.",
@@ -744,6 +837,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "trator-rebocador-4100-gas",
     tagline: "Movimentação de cargas com menor emissão",
     image: tratorHero,
+    image2: caminhaoLeveGenerico,
     gallery: [tratorHero, tratorIndustrial],
     description:
       "Versão a gás do Rebocador 4100, indicada para operações industriais e logísticas internas que buscam reduzir emissões sem abrir mão de força e confiabilidade.",
@@ -766,6 +860,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am200-mo",
     tagline: "DNA militar adaptado para o uso civil",
     image: marruaAM200MO,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM200MO, marruaCivilGenerico, marruaAM200MOEscolar],
     description:
       "O Marruá AM200 MO leva a robustez e a confiabilidade do DNA militar Agrale para operações civis, off-road e uso urbano, com baixo custo de manutenção.",
@@ -790,6 +885,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am200-mo-escolar",
     tagline: "Transporte escolar robusto para qualquer terreno",
     image: marruaAM200MOEscolar,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM200MOEscolar, marruaAM200MO, marruaCivilGenerico],
     description:
       "Versão adaptada para transporte escolar em áreas rurais e de difícil acesso, unindo a robustez 4x4 do Marruá à segurança necessária para o transporte de estudantes.",
@@ -811,6 +907,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am250-cabine-dupla",
     tagline: "Versatilidade para operações civis e corporativas",
     image: marruaAM250Dupla,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM250Dupla, marruaAM250Simples, marruaCivilGenerico],
     description:
       "Com cabine dupla, o AM250 é indicado para operações que exigem transporte de equipe e carga simultaneamente, mantendo a tração 4x4 e a robustez da linha Marruá.",
@@ -832,6 +929,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am250-cabine-simples",
     tagline: "Foco em capacidade de carga",
     image: marruaAM250Simples,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM250Simples, marruaAM250Dupla, marruaCivilGenerico],
     description:
       "Versão cabine simples do AM250, otimizada para maior capacidade de carga útil, mantendo o desempenho 4x4 característico da linha Marruá.",
@@ -853,6 +951,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am11-reconhecimento",
     tagline: "Missões críticas e reconhecimento em qualquer terreno",
     image: marruaAM11Reconhecimento,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM11Reconhecimento, marruaAM31, marruaAM21VTNE],
     description:
       "Desenvolvido para missões de reconhecimento, o AM11 combina tração 4x4, suspensão de longo curso e confiabilidade mecânica para operar em condições operacionais críticas.",
@@ -874,6 +973,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am21-vtne-3-4-ton",
     tagline: "Transporte de tropas e cargas táticas",
     image: marruaAM21VTNE,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM21VTNE, marruaAM23VTNE, marruaAM11Reconhecimento],
     description:
       "Veículo de Transporte Não Especializado (VTNE) com capacidade de 3/4 de tonelada, indicado para transporte de tropas, equipamentos e apoio logístico em operações militares.",
@@ -894,6 +994,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am23-chassi-cabine",
     tagline: "Plataforma versátil para carrocerias especiais",
     image: marruaAM23Chassi,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM23Chassi, marruaAM23VTNE, marruaAM21VTNE],
     description:
       "Configuração chassi-cabine do AM23, pensada para receber carrocerias e implementos especiais em aplicações de defesa e segurança pública.",
@@ -914,6 +1015,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am23-vtne-3-4-ton",
     tagline: "Nova geração do VTNE 3/4 de tonelada",
     image: marruaAM23VTNE,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM23VTNE, marruaAM21VTNE, marruaAM23Chassi],
     description:
       "Evolução da linha VTNE, o AM23 mantém a capacidade de 3/4 de tonelada com atualizações mecânicas que reforçam confiabilidade e desempenho em operações táticas.",
@@ -934,6 +1036,7 @@ export const VEHICLES: Vehicle[] = [
     slug: "marrua-am31",
     tagline: "Máxima capacidade operacional da linha Defesa e Segurança",
     image: marruaAM31,
+    image2: caminhaoLeveGenerico,
     gallery: [marruaAM31, marruaAM11Reconhecimento, marruaAM23VTNE],
     description:
       "O AM31 é o modelo de maior capacidade da linha Defesa e Segurança, projetado para as missões mais exigentes com robustez estrutural e desempenho em qualquer terreno.",
