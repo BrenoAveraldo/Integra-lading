@@ -70,11 +70,15 @@ export function Button(props: ButtonProps) {
 
   const applyHover = (el: HTMLElement, entering: boolean) => {
     const hover = HOVER_STYLES[variant];
+    // Cards com sombra própria (como os do CategoriesGrid) sobem mais no hover,
+    // reforçando a sensação de flutuação; botões normais mantêm o leve -2px de sempre.
+    const hasCardShadow = Boolean(combined.boxShadow);
+    const liftDistance = hasCardShadow ? -8 : -2;
     if (entering) {
       el.style.background = hover.background;
       if (hover.color) el.style.color = hover.color;
       if (hover.borderColor) el.style.borderColor = hover.borderColor;
-      el.style.transform = "translateY(-2px)";
+      el.style.transform = `translateY(${liftDistance}px)`;
     } else {
       el.style.background = combined.background as string;
       el.style.color = combined.color as string;

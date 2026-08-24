@@ -14,13 +14,13 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
       style={{
         display: "block",
         background: "#fff",
-        border: "1px solid #eee",
+        border: "1px solid #0b0b0b29",
         overflow: "hidden",
         boxShadow: "0 4px 24px rgba(0,0,0,0.05)",
         transition: "transform 0.25s, box-shadow 0.25s",
         textDecoration: "none",
         color: "inherit",
-        height: 350,
+        height: 401,
       }}
       onMouseEnter={(e) => {
         (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(-6px)";
@@ -34,11 +34,11 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
       <div
         style={{
           background: "#ffffff",
-          padding: "28px 32px",
+          
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          minHeight: 180,
+          minHeight: 245,
         }}
       >
         <img

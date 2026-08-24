@@ -92,14 +92,14 @@ export function CategoryPage() {
                 (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 4px 24px rgba(0,0,0,0.05)";
               }}
             >
-              <div style={{ background: "#f8f8f8", padding: "28px 32px", display: "flex", justifyContent: "center", alignItems: "center", minHeight: 180 }}>
+              <div style={{  padding: "28px 32px", display: "flex", justifyContent: "center", alignItems: "center", minHeight: 180 }}>
                 <img src={sub.image} alt={sub.name} style={{ maxWidth: "100%", maxHeight: 160, objectFit: "contain" }} />
               </div>
               <div style={{ padding: "22px 24px 26px" }}>
                 <div style={{ marginTop: -40, marginBottom: 16 }}>
                   <Tag variant={getSubcategoryVariant(data.slug, sub.slug)}>{sub.name}</Tag>
                 </div>
-                <p style={{ fontSize: 13, color: "#777", marginBottom: 18, lineHeight: 1.6, fontFamily: "'Open Sans', sans-serif" }}>{sub.shortDescription}</p>
+                <p style={{ fontSize: 13, color: "#757171", marginBottom: 18, lineHeight: 1.6, fontFamily: "'Open Sans', sans-serif" }}>{sub.shortDescription}</p>
                 <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "#C8102E", fontFamily: "'Poppins', sans-serif" }}>
                   Ver modelos ›
                 </span>

@@ -43,6 +43,7 @@ export function CategoriesGrid() {
                 position: "relative",
                 height: 320,
                 textAlign: "left",
+                boxShadow: "6px 6px 18px 0px rgba(0, 0, 0, 0.3)"
               }}
             >
               <div style={{ position: "relative", width: "100%", height: "100%" }}>

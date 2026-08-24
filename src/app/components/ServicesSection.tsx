@@ -30,9 +30,9 @@ export function ServicesSection() {
             {SERVICES.map((service) => (
               <div
                 key={service.title}
-                style={{ background: "#fff", padding: "32px 28px", boxShadow: "0 2px 16px rgba(0,0,0,0.05)", borderBottom: "3px solid #C8102E", transition: "transform 0.25s, box-shadow 0.25s" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "0 12px 40px rgba(200,16,46,0.1)"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "0 2px 16px rgba(0,0,0,0.05)"; }}
+                style={{ background: "#fff", padding: "32px 28px", boxShadow: "6px 6px 18px 0px rgba(0, 0, 0, 0.3)", borderBottom: "3px solid #C8102E", transition: "transform 0.25s, box-shadow 0.25s" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "6px 6px 18px 0px rgba(250, 7, 7, 0.3)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "6px 6px 18px 0px rgba(2, 2, 2, 0.3)"; }}
               >
                 <div style={{ width: 48, height: 48, background: "#fff0f3", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                   <service.icon size={22} color="#C8102E" strokeWidth={2} />
