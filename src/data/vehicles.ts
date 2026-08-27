@@ -167,41 +167,41 @@ import am200cabinesimples7 from "../imports/images/marrua/cabine_simples (7).jpg
 import am200cabinesimples8 from "../imports/images/marrua/cabine_simples (8).jpg";
 import am200cabinesimples9 from "../imports/images/marrua/cabine_simples (9).jpg";
 import am200cabinesimples10 from "../imports/images/marrua/cabine_simples (10).jpg";
-import am11galeria from "../imports/images/marrua/am11.jpg";
-import am11galeria1 from "../imports/images/marrua/am11 (1).jpg";
-import am11galeria2 from "../imports/images/marrua/am11 (2).jpg";
-import am11galeria3 from "../imports/images/marrua/am11 (3).jpg";
-import am11galeria4 from "../imports/images/marrua/am11 (4).jpg";
-import am11galeria5 from "../imports/images/marrua/am11 (5).jpg";
-import am11galeria6 from "../imports/images/marrua/am11 (6).jpg";
-import am11galeria7 from "../imports/images/marrua/am11 (7).jpg";
-import am11galeria8 from "../imports/images/marrua/am11 (8).jpg";
-import am11galeria9 from "../imports/images/marrua/am11 (9).jpg";
-import am11galeria10 from "../imports/images/marrua/am11 (10).jpg";
-import am11galeria11 from "../imports/images/marrua/am11 (11).jpg";
-import am11galeria12 from "../imports/images/marrua/am11 (12).jpg";
-import am11galeria13 from "../imports/images/marrua/am11 (13).jpg";
-import am11galeria14 from "../imports/images/marrua/am11 (14).jpg";
-import am11galeria15 from "../imports/images/marrua/am11 (15).jpg";
-import am11galeria16 from "../imports/images/marrua/am11 (16).jpg";
-import am11galeria17 from "../imports/images/marrua/am11 (17).jpg";
-import am11galeria18 from "../imports/images/marrua/am11 (18).jpg";
-import am21galeria from "../imports/images/marrua/am21 (1).jpg";
-import am21galeria1 from "../imports/images/marrua/am21 (2).jpg";
-import am21galeria2 from "../imports/images/marrua/am21 (3).jpg";
-import am21galeria3 from "../imports/images/marrua/am21 (4).jpg";
-import am21galeria4 from "../imports/images/marrua/am21 (5).jpg";
-import am21galeria5 from "../imports/images/marrua/am21 (6).jpg";
-import am21galeria6 from "../imports/images/marrua/am21 (7).jpg";
-import am21galeria7 from "../imports/images/marrua/am21 (8).jpg";
-import am21galeria8 from "../imports/images/marrua/am21 (9).jpg";
-import am21galeria9 from "../imports/images/marrua/am21 (10).jpg";
-import am21galeria10 from "../imports/images/marrua/am21 (11).jpg";
-import am21galeria11 from "../imports/images/marrua/am21 (12).jpg";
-import am21galeria12 from "../imports/images/marrua/am21 (13).jpg";
-import am21galeria13 from "../imports/images/marrua/am21 (14).jpg";
-import am21galeria14 from "../imports/images/marrua/am21 (15).jpg";
-import am21galeria15 from "../imports/images/marrua/am21 (16).jpg";
+import AM11galeria from "../imports/images/marrua/AM11.jpg";
+import AM11galeria1 from "../imports/images/marrua/AM11 (1).jpg";
+import AM11galeria2 from "../imports/images/marrua/AM11 (2).jpg";
+import AM11galeria3 from "../imports/images/marrua/AM11 (3).jpg";
+import AM11galeria4 from "../imports/images/marrua/AM11 (4).jpg";
+import AM11galeria5 from "../imports/images/marrua/AM11 (5).jpg";
+import AM11galeria6 from "../imports/images/marrua/AM11 (6).jpg";
+import AM11galeria7 from "../imports/images/marrua/AM11 (7).jpg";
+import AM11galeria8 from "../imports/images/marrua/AM11 (8).jpg";
+import AM11galeria9 from "../imports/images/marrua/AM11 (9).jpg";
+import AM11galeria10 from "../imports/images/marrua/AM11 (10).jpg";
+import AM11galeria11 from "../imports/images/marrua/AM11 (11).jpg";
+import AM11galeria12 from "../imports/images/marrua/AM11 (12).jpg";
+import AM11galeria13 from "../imports/images/marrua/AM11 (13).jpg";
+import AM11galeria14 from "../imports/images/marrua/AM11 (14).jpg";
+import AM11galeria15 from "../imports/images/marrua/AM11 (15).jpg";
+import AM11galeria16 from "../imports/images/marrua/AM11 (16).jpg";
+import AM11galeria17 from "../imports/images/marrua/AM11 (17).jpg";
+import AM11galeria18 from "../imports/images/marrua/AM11 (18).jpg";
+import AM21galeria from "../imports/images/marrua/AM21 (1).jpg";
+import AM21galeria1 from "../imports/images/marrua/AM21 (2).jpg";
+import AM21galeria2 from "../imports/images/marrua/AM21 (3).jpg";
+import AM21galeria3 from "../imports/images/marrua/AM21 (4).jpg";
+import AM21galeria4 from "../imports/images/marrua/AM21 (5).jpg";
+import AM21galeria5 from "../imports/images/marrua/AM21 (6).jpg";
+import AM21galeria6 from "../imports/images/marrua/AM21 (7).jpg";
+import AM21galeria7 from "../imports/images/marrua/AM21 (8).jpg";
+import AM21galeria8 from "../imports/images/marrua/AM21 (9).jpg";
+import AM21galeria9 from "../imports/images/marrua/AM21 (10).jpg";
+import AM21galeria10 from "../imports/images/marrua/AM21 (11).jpg";
+import AM21galeria11 from "../imports/images/marrua/AM21 (12).jpg";
+import AM21galeria12 from "../imports/images/marrua/AM21 (13).jpg";
+import AM21galeria13 from "../imports/images/marrua/AM21 (14).jpg";
+import AM21galeria14 from "../imports/images/marrua/AM21 (15).jpg";
+import AM21galeria15 from "../imports/images/marrua/AM21 (16).jpg";
 import AM23galeria from "../imports/images/marrua/M23 (1).jpg";
 import AM23galeria2 from "../imports/images/marrua/M23 (2).jpg";
 import AM23galeria3 from "../imports/images/marrua/M23 (3).jpg";
@@ -1033,16 +1033,16 @@ export const VEHICLES: Vehicle[] = [
     highlights: ["Maior capacidade de carga útil", "Tração 4x4", "Robustez e confiabilidade", "Baixo custo de manutenção"],
   },
   {
-    id: "am11-reconhecimento",
+    id: "AM11-reconhecimento",
     category: "marrua",
     subcategory: "defesa-e-seguranca",
     name: "AM11 Reconhecimento",
-    slug: "am11-reconhecimento",
+    slug: "AM11-reconhecimento",
     tagline: "Missões críticas e reconhecimento em qualquer terreno",
     image: marruaAM11Reconhecimento,
     image2: marruaAM11Reconhecimento,
-    datasheetUrl: "/datasheets/viatura-militar-br-am11-reconhecimento-atualizado - fixa tecnica.pdf",
-    gallery: [ am11galeria ,am11galeria1  ,am11galeria2  ,am11galeria3  ,am11galeria4  ,am11galeria5  ,am11galeria6  ,am11galeria7  ,am11galeria8  ,am11galeria9  ,am11galeria10 ,am11galeria11 ,am11galeria12 ,am11galeria13 ,am11galeria14 ,am11galeria15 ,am11galeria16 ,am11galeria17 ,am11galeria18],
+    datasheetUrl: "/datasheets/viatura-militar-br-AM11-reconhecimento-atualizado - fixa tecnica.pdf",
+    gallery: [ AM11galeria ,AM11galeria1  ,AM11galeria2  ,AM11galeria3  ,AM11galeria4  ,AM11galeria5  ,AM11galeria6  ,AM11galeria7  ,AM11galeria8  ,AM11galeria9  ,AM11galeria10 ,AM11galeria11 ,AM11galeria12 ,AM11galeria13 ,AM11galeria14 ,AM11galeria15 ,AM11galeria16 ,AM11galeria17 ,AM11galeria18],
     description:
       "Desenvolvido para missões de reconhecimento, o AM11 combina tração 4x4, suspensão de longo curso e confiabilidade mecânica para operar em condições operacionais críticas.",
     specifications: {
@@ -1054,16 +1054,16 @@ export const VEHICLES: Vehicle[] = [
     highlights: ["Tração 4x4", "Suspensão de longo curso", "Missões de reconhecimento", "Robustez militar"],
   },
   {
-    id: "am21-vtne",
+    id: "AM21-vtne",
     category: "marrua",
     subcategory: "defesa-e-seguranca",
     name: "AM21 VTNE 3/4 Ton",
-    slug: "am21-vtne-3-4-ton",
+    slug: "AM21-vtne-3-4-ton",
     tagline: "Transporte de tropas e cargas táticas",
     image: marruaAM21VTNE,
     image2: marruaAM21VTNE,
-    datasheetUrl: "/datasheets/viatura-militar-br-am21---vtne-ton-atualizado - fixa tecnica.pdf",
-    gallery: [am21galeria  ,am21galeria1  ,am21galeria2  ,am21galeria3  ,am21galeria4  ,am21galeria5  ,am21galeria6  ,am21galeria7  ,am21galeria8  ,am21galeria9  ,am21galeria10 ,am21galeria11 ,am21galeria12 ,am21galeria13 ,am21galeria14 ,am21galeria15],
+    datasheetUrl: "/datasheets/viatura-militar-br-AM21---vtne-ton-atualizado - fixa tecnica.pdf",
+    gallery: [AM21galeria  ,AM21galeria1  ,AM21galeria2  ,AM21galeria3  ,AM21galeria4  ,AM21galeria5  ,AM21galeria6  ,AM21galeria7  ,AM21galeria8  ,AM21galeria9  ,AM21galeria10 ,AM21galeria11 ,AM21galeria12 ,AM21galeria13 ,AM21galeria14 ,AM21galeria15],
     description:
       "Veículo de Transporte Não Especializado (VTNE) com capacidade de 3/4 de tonelada, indicado para transporte de tropas, equipamentos e apoio logístico em operações militares.",
     specifications: {
