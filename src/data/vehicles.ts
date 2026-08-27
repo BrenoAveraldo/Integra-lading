@@ -21,19 +21,11 @@ import caminhaoA10000 from "../imports/images/caminhao/Agrale10000-card-pequeno.
 import caminhaoA10000galeria from "../imports/images/caminhao/Agrale-10000-galeria.jpg";
 import caminhaoA10000galeria2 from "../imports/images/caminhao/Agrale-10000-galeria2.jpg";
 import caminhaoA10000galeria3 from "../imports/images/caminhao/Caminhao-A10000-4X4-Militar-Galeria.jpeg";
-import caminhaoLeveGenerico from "../imports/images/caminhao/agarale8700-card-pequeno.jpeg";
 import caminhaoCard from "../imports/images/caminhao/CAMINH_O.png";
-import caminhaoSemipesado from "../imports/images/caminhao/agarale8700-card-pequeno.jpeg";
-import caminhao8700 from "../imports/images/caminhao/agarale8700-card-pequeno.jpeg";
 import caminhao8700galeria from "../imports/images/caminhao/agrale-8700-galeria.jpg";
 import caminhao8700galeria2 from "../imports/images/caminhao/agrale-8700-galeria2.jpg";
 import caminhaoHero from "../imports/images/caminhao/caminhao hero.png";
-import caminhao10004x4 from"../imports/images/caminhao/caminhao 4x4 1000.png";
-import caminhao11000 from "../imports/images/caminhao/agraçe-11000-gas.jpeg";
-import caminhaoEXT from "../imports/images/caminhao/ext-4x4-card-pequeno.jpeg";
 import caminhaoEXTgaleria from "../imports/images/caminhao/Caminhão-EXT-gaelria.jpg";
-import caminhao15000 from "../imports/images/caminhao/agrale15000-card-pequeno.jpeg";
-import caminhao18000 from "../imports/images/caminhao/agrale18000-card-pequeno.jpeg";
 import ca8700 from "../imports/images/caminhao/CAMINHÃO AGRALE A 8.700.png";
 import ca10000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 10.000.png";
 import ca100004x4 from "../imports/images/caminhao/CAMINHÃO AGRALE A 10.000 4x4.png";
@@ -45,14 +37,9 @@ import caEXT4x4 from "../imports/images/caminhao/Caminhão Agrale EXT 4x4 (Truck
 
 
 // Ônibus / Chassis
-import chassiOnibus from "../imports/images/onibus/CHASSI-PARA-ONIBUS.png";
 import chassiMicrobus from "../imports/images/onibus/CHASSIS-MICROBUS.png";
 import chassiMidibus from "../imports/images/onibus/CHASSIS-MIDBUS.png";
 import chassiMotorhome from "../imports/images/onibus/CHASSIS-MOTORHOME.png";
-import microbusMA92 from "../imports/images/onibus/microbus ma 9.2.png";
-import microbusMA100 from "../imports/images/onibus/MA10- card- pequeno.png";
-import midibusMA170 from "../imports/images/onibus/MIDBUS 17.0.png";
-import motorhomeMA110 from "../imports/images/onibus/MOTORHOME MA11.0.png";
 import onibusHero from "../imports/images/onibus/Onibus hero.png";
 import MA100 from "../imports/images/onibus/MA 10.0.png";
 import MA92 from "../imports/images/onibus/MA 9.2.png";
@@ -68,7 +55,6 @@ import MA11gasgaleria5 from "../imports/images/onibus/m11 - galeria5.jpg"
 
 
 // Tratores
-import Principal4125 from "../imports/images/trator/TRATOR-4125-2.png";
 import trator4125 from "../imports/images/trator/TRATOR-4125-2.png";
 import trator4125Cargo from "../imports/images/trator/TRATOR 4125 CARGO.png";
 import trator4125Coletor from "../imports/images/trator/Trator 4125 Coletor.png";
@@ -89,24 +75,152 @@ import trator4125galeria2 from "../imports/images/trator/Trator 4125 galeria 2.j
 import trator4125galeria3 from "../imports/images/trator/Trator 4125 galeria 3.jpg";
 import trator4125galeria4 from "../imports/images/trator/Trator 4125 galeria 4.jpg";
 import trator4125galeria5 from "../imports/images/trator/Trator 4125 5.jpg";
-
-
-
+import trator4125coletorgaleria from "../imports/images/trator/trator coletor.jpg";
+import trator4125coletorgaleria2 from "../imports/images/trator/trator coletor 2.jpg";
+import trator4125coletorgaleria3 from "../imports/images/trator/trator coletor 3.jpg";
+import trator4125coletorgaleria4 from "../imports/images/trator/trator coletor 4.jpg";
+import trator4233galeria from "../imports/images/trator/trator 4233 galeria.jpg";
+import trator4233galeria2 from "../imports/images/trator/trator 4233 galeria 2.jpg";
+import trator4233galeria3 from "../imports/images/trator/trator 4233 galeria 3.jpg";
+import trator525galeria from "../imports/images/trator/trator 525 galeria.jpg";
+import trator525galeria2 from "../imports/images/trator/trator 525 galeria 2.jpg";
+import trator525galeria3 from "../imports/images/trator/trator 525 galeria 3.jpg";
+import trator525galeria4 from "../imports/images/trator/trator 525 galeria 4.jpg";
+import trator525galeria5 from "../imports/images/trator/trator 525 galeria 5.jpg";
+import trator525galeria6 from "../imports/images/trator/trator 525 galeria 6.jpg";
+import trator540TX_galeria from "../imports/images/trator/trator540TXgaleria.jpg";
+import trator540TX_galeria2 from "../imports/images/trator/trator540TXgaleria2.jpg";
+import trator575  from "../imports/images/trator/575 galeria.jpg";
+import trator5752  from "../imports/images/trator/575 galeria 2.jpg";
+import trator5753 from "../imports/images/trator/575 galeria 3.jpg";
+import trator5754 from "../imports/images/trator/575 galeria 4.jpg";
+import trator5755 from "../imports/images/trator/575 galeria 5.jpg";
+import super575 from "../imports/images/trator/trator-575-super-galeria.jpg";
+import super5752 from "../imports/images/trator/trator-575-super-galeria-2.jpg";
+import super5753 from "../imports/images/trator/trator-575-super-galeria-3.jpg";
+import super5754 from "../imports/images/trator/trator-575-super-galeria-4.jpg";
+import super5755 from "../imports/images/trator/trator-575-super-galeria-5.jpg";
+import traot5105 from "../imports/images/trator/trator-5105-galeria.jpg";
+import traot51052 from "../imports/images/trator/trator-5105-galeria-2.jpg";
+import traot51053 from "../imports/images/trator/trator-5105-galeria-3.jpg";
+import traot51054 from "../imports/images/trator/trator-5105-galeria-4.jpg";
+import traot51055 from "../imports/images/trator/trator-5105-galeria-5.jpg";
+import traot51056 from "../imports/images/trator/trator-5105-galeria-6.jpg";
+import traot51057 from "../imports/images/trator/trator-5105-galeria-7.jpg";
+import trator61857 from "../imports/images/trator/TRATOR 6185 - galeria6.jpg";
+import trator61852 from "../imports/images/trator/TRATOR 6185 - galeria.jpg";
+import trator61853 from "../imports/images/trator/TRATOR 6185 - galeria2.jpg";
+import trator61854 from "../imports/images/trator/TRATOR 6185 - galeria3.jpg";
+import trator61855 from "../imports/images/trator/TRATOR 6185 - galeria4.jpg";
+import trator61856 from "../imports/images/trator/TRATOR 6185 - galeria5.jpg";
+import trator72155 from "../imports/images/trator/trator7215-galeria.jpg";
+import trator72152 from "../imports/images/trator/trator7215-galeria2.jpg";
+import trator72153 from "../imports/images/trator/trator7215-galeria3.jpg";
+import trator72154 from "../imports/images/trator/trator7215-galeria4.jpg";
 
 
 
 // Marruá
-import marruaAM200MO from "../imports/images/marrua/MARRUA CIVIL  AM200 MO.png";
-import marruaAM200MOEscolar from "../imports/images/marrua/MARRUA CIVIL AM200 MO ESCOLAR.png";
-import marruaAM250Dupla from "../imports/images/marrua/MARRUA CIVIL  AM250 CABINE DUPLA.png";
-import marruaAM250Simples from "../imports/images/marrua/MARRUA CIVIL  AM250 CABINE SIMPLES.png";
-import marruaAM11Reconhecimento from "../imports/images/marrua/MARRUA DEFESA E SEGURANCA AM11 RECONHECIMENTO.png";
-import marruaAM21VTNE from "../imports/images/marrua/MARRUA DEFESA E SEGURANCA AM21 VTNE 3-4 TON.png";
-import marruaAM23Chassi from "../imports/images/marrua/MARRUA DEFESA E SEGURANCA AM23 CHASSI CABINE.png";
-import marruaAM23VTNE from "../imports/images/marrua/MARRUA DEFESA E SEGURANCA AM23 VTNE 3-4 TON.png";
-import marruaAM31 from "../imports/images/marrua/MARRUA DEFESA E SEGURANCA AM31.png";
+import marruaAM200MO from "../imports/images/marrua/AM200 MO.png";
+import marruaAM200MOEscolar from "../imports/images/marrua/AM200 MO ESCOLAR.png";
+import marruaAM250Dupla from "../imports/images/marrua/AM250 CABINE DUPLA.png";
+import marruaAM250Simples from "../imports/images/marrua/AM250 CABINE SIMPLES.png";
+import marruaAM11Reconhecimento from "../imports/images/marrua/VIATURA MILITAR.png";
+import marruaAM21VTNE from "../imports/images/marrua/VIATURA MILITAR AM21.png";
+import marruaAM23Chassi from "../imports/images/marrua/VIATURA MILITAR A23.png";
+import marruaAM23VTNE from "../imports/images/marrua/VIATURA MILITAR A23 VTNE.png";//FALTA
+import marruaAM31 from "../imports/images/marrua/VIATURA MILITAR A31.png"; //FALTA
 import marruaCivilGenerico from "../imports/images/marrua/MARRUA-CIVIL.png";
 import marruaHero from "../imports/images/marrua/MARRUA HERO.png";
+import am200m0 from "../imports/images/marrua/marrua200m0galeria.jpg";
+import am200m02 from "../imports/images/marrua/marrua200m0galeria2.jpg";
+import am200escolar from "../imports/images/marrua/escolar.jpeg";
+import am200escolar2 from "../imports/images/marrua/escolar 2.jpeg";
+import am200escolar3 from "../imports/images/marrua/escolar 3.jpg";
+import am200escolar4 from "../imports/images/marrua/escolar 4.jpg";
+import am200cabinedupla from "../imports/images/marrua/cabine_dupla.jpg";
+import am200cabinedupla2 from "../imports/images/marrua/cabine_dupla (2).jpg";
+import am200cabinedupla3 from "../imports/images/marrua/cabine_dupla (3).jpg";
+import am200cabinedupla4 from "../imports/images/marrua/cabine_dupla (4).jpg";
+import am200cabinedupla5 from "../imports/images/marrua/cabine_dupla (5).jpg";
+import am200cabinedupla6 from "../imports/images/marrua/cabine_dupla (6).jpg";
+import am200cabinedupla7 from "../imports/images/marrua/cabine_dupla (7).jpg";
+import am200cabinedupla8 from "../imports/images/marrua/cabine_dupla (8).jpg";
+import am200cabinedupla9 from "../imports/images/marrua/cabine_dupla (9).png";
+import am200cabinedupla10 from "../imports/images/marrua/cabine_dupla (10).jpg";
+import am200cabinedupla11 from "../imports/images/marrua/cabine_dupla (11).png";
+import am200cabinedupla12 from "../imports/images/marrua/cabine_dupla (12).jpg";
+import am200cabinedupla13 from "../imports/images/marrua/cabine_dupla (13).jpg";
+import am200cabinedupla14 from "../imports/images/marrua/cabine_dupla (14).png";
+import am200cabinedupla15 from "../imports/images/marrua/cabine_dupla (15).jpg";
+import am200cabinedupla16 from "../imports/images/marrua/cabine_dupla (16).jpg";
+import am200cabinedupla17 from "../imports/images/marrua/cabine_dupla (17).png";
+import am200cabinedupla18 from "../imports/images/marrua/cabine_dupla (18).jpg";
+import am200cabinedupla19 from "../imports/images/marrua/cabine_dupla (19).jpg";
+import am200cabinesimples from "../imports/images/marrua/cabine_simples.jpg";
+import am200cabinesimples2 from "../imports/images/marrua/cabine_simples (2).jpg";
+import am200cabinesimples3 from "../imports/images/marrua/cabine_simples (3).jpg";
+import am200cabinesimples4 from "../imports/images/marrua/cabine_simples (4).jpg";
+import am200cabinesimples5 from "../imports/images/marrua/cabine_simples (5).jpg";
+import am200cabinesimples6 from "../imports/images/marrua/cabine_simples (6).jpg";
+import am200cabinesimples7 from "../imports/images/marrua/cabine_simples (7).jpg";
+import am200cabinesimples8 from "../imports/images/marrua/cabine_simples (8).jpg";
+import am200cabinesimples9 from "../imports/images/marrua/cabine_simples (9).jpg";
+import am200cabinesimples10 from "../imports/images/marrua/cabine_simples (10).jpg";
+import am11galeria from "../imports/images/marrua/am11.jpg";
+import am11galeria1 from "../imports/images/marrua/am11 (1).jpg";
+import am11galeria2 from "../imports/images/marrua/am11 (2).jpg";
+import am11galeria3 from "../imports/images/marrua/am11 (3).jpg";
+import am11galeria4 from "../imports/images/marrua/am11 (4).jpg";
+import am11galeria5 from "../imports/images/marrua/am11 (5).jpg";
+import am11galeria6 from "../imports/images/marrua/am11 (6).jpg";
+import am11galeria7 from "../imports/images/marrua/am11 (7).jpg";
+import am11galeria8 from "../imports/images/marrua/am11 (8).jpg";
+import am11galeria9 from "../imports/images/marrua/am11 (9).jpg";
+import am11galeria10 from "../imports/images/marrua/am11 (10).jpg";
+import am11galeria11 from "../imports/images/marrua/am11 (11).jpg";
+import am11galeria12 from "../imports/images/marrua/am11 (12).jpg";
+import am11galeria13 from "../imports/images/marrua/am11 (13).jpg";
+import am11galeria14 from "../imports/images/marrua/am11 (14).jpg";
+import am11galeria15 from "../imports/images/marrua/am11 (15).jpg";
+import am11galeria16 from "../imports/images/marrua/am11 (16).jpg";
+import am11galeria17 from "../imports/images/marrua/am11 (17).jpg";
+import am11galeria18 from "../imports/images/marrua/am11 (18).jpg";
+import am21galeria from "../imports/images/marrua/am21 (1).jpg";
+import am21galeria1 from "../imports/images/marrua/am21 (2).jpg";
+import am21galeria2 from "../imports/images/marrua/am21 (3).jpg";
+import am21galeria3 from "../imports/images/marrua/am21 (4).jpg";
+import am21galeria4 from "../imports/images/marrua/am21 (5).jpg";
+import am21galeria5 from "../imports/images/marrua/am21 (6).jpg";
+import am21galeria6 from "../imports/images/marrua/am21 (7).jpg";
+import am21galeria7 from "../imports/images/marrua/am21 (8).jpg";
+import am21galeria8 from "../imports/images/marrua/am21 (9).jpg";
+import am21galeria9 from "../imports/images/marrua/am21 (10).jpg";
+import am21galeria10 from "../imports/images/marrua/am21 (11).jpg";
+import am21galeria11 from "../imports/images/marrua/am21 (12).jpg";
+import am21galeria12 from "../imports/images/marrua/am21 (13).jpg";
+import am21galeria13 from "../imports/images/marrua/am21 (14).jpg";
+import am21galeria14 from "../imports/images/marrua/am21 (15).jpg";
+import am21galeria15 from "../imports/images/marrua/am21 (16).jpg";
+import AM23galeria from "../imports/images/marrua/M23 (1).jpg";
+import AM23galeria2 from "../imports/images/marrua/M23 (2).jpg";
+import AM23galeria3 from "../imports/images/marrua/M23 (3).jpg";
+import AM23galeria4 from "../imports/images/marrua/M23 (4).jpg";
+import AM23ambulancia from "../imports/images/marrua/AM23 (1).jpg";
+import AM23ambulancia2 from "../imports/images/marrua/AM23 (2).jpg";
+import AM23ambulancia3 from "../imports/images/marrua/AM23 (3).jpg";
+import AM23ambulancia4 from "../imports/images/marrua/AM23 (4).jpg";
+import AM23ambulancia5 from "../imports/images/marrua/AM23 (5).jpg";
+import AM23ambulancia6 from "../imports/images/marrua/AM23 (6).jpg";
+import AM23ambulancia7 from "../imports/images/marrua/AM23 (7).jpg";
+import AM23ambulancia8 from "../imports/images/marrua/AM23 (8).jpg";
+import AM23ambulancia9 from "../imports/images/marrua/AM23 (9).jpg";
+import AM23ambulancia10 from "../imports/images/marrua/AM23 (10).jpg";
+import AM23ambulancia11 from "../imports/images/marrua/AM23 (11).jpg";
+
+
+
+
 
 // ---- Tipos ------------------------------------------------------------------
 
@@ -590,16 +704,17 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Projetado para operações de coleta",
     image: trator4125Coletor,
     image2: trator4125Coletor,
-    gallery: [trator4125Coletor, trator4125, trator4125Cargo],
+    datasheetUrl: "/datasheets/trator-4125-cargo-atualizado - fixa tecnica.pdf", 
+    gallery: [trator4125coletorgaleria4, trator4125coletorgaleria3, trator4125coletorgaleria2, trator4125coletorgaleria],
     description:
       "Versão especializada do 4125 para operações de coleta, combinando a mesma robustez mecânica da linha com adaptações voltadas à aplicação específica.",
     specifications: {
-      "Motorização": "3 cilindros turbodiesel",
+      "Motorização": "AGRALE YD390",
       "Potência": "125 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x2 / 4x4 (conforme versão)",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Capacidade de carga": "1.500 Kg",
+      "Tanque Combustível": "39 L",
+      "Direção": "Hidráulica / Hidrostática",
+      "Giro": " 522 a 2.400 rpm no motor"
     },
     highlights: ["Aplicação especializada em coleta", "Robustez da linha 4125", "Economia operacional", "Fácil manutenção"],
   },
@@ -612,16 +727,15 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Equilíbrio entre potência e agilidade",
     image: trator4233,
     image2: trator4233,
-    gallery: [trator4233, trator4125],
+    datasheetUrl: "/datasheets/trator-4233-atualizado  - fixa tecnica.pdf.pdf", 
+   gallery: [trator4233galeria, trator4233galeria2, trator4233galeria3],
     description:
       "O Trator 4233 entrega bom equilíbrio entre potência e agilidade, indicado para operações agrícolas de médio porte que exigem versatilidade de implementos.",
     specifications: {
-      "Motorização": "3 cilindros turbodiesel",
-      "Potência": "75 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x2 / 4x4 (conforme versão)",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": "Agrale 2 Cilindros com 1.270 cilindradas cm³ ",
+      "Potência": "24,5 cv (18,0 kW) a 2.700 rpm",
+      "Torque": "6,6 kgf.m (65 Nm) a 2.550 rpm",
+      "Tanque de Combustível": "35 L",
     },
     highlights: ["Versatilidade de implementos", "Agilidade operacional", "Baixo custo de manutenção", "Robustez Agrale"],
   },
@@ -634,16 +748,15 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Compacto e versátil para pequenas propriedades",
     image: trator525,
     image2: trator525,
-    gallery: [trator525, trator4233],
+    datasheetUrl: "/datasheets/trator-525-atualizado  - ficha tecnica.pdf", 
+    gallery: [trator525galeria, trator525galeria2, trator525galeria3, trator525galeria4, trator525galeria5, trator525galeria6],
     description:
       "Compacto e ágil, o Trator 525 é indicado para pequenas propriedades, pomares e operações que exigem manobrabilidade sem abrir mão de robustez mecânica.",
     specifications: {
-      "Motorização": "3 cilindros",
-      "Potência": "50 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x2 / 4x4 (conforme versão)",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": " Agrale KM385",
+      "Potência": "25 cv (18,4 kW) a 2.350 rpm (ISO14396)",
+      "Torque": "8,5 a 10,2 kgf.m (83 a 100 Nm) a 1.650 rpm (NBR 14396)",
+      "Tanque de Combustível": " 30 L",
     },
     highlights: ["Compacto e ágil", "Ideal para pequenas propriedades", "Baixo custo operacional", "Fácil manutenção"],
   },
@@ -656,16 +769,15 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Mais tecnologia para operações de precisão",
     image: trator540TX,
     image2: trator540TX,
-    gallery: [trator540TX, trator575Compact],
+    datasheetUrl: "/datasheets/trator-540-xt-atualizado - fixa tecnica.pdf", 
+    gallery: [trator540TX_galeria, trator540TX_galeria2],
     description:
       "O 540 XT traz tecnologia embarcada e conforto para o operador, indicado para propriedades que buscam mais precisão e produtividade nas operações do dia a dia.",
     specifications: {
-      "Motorização": "3 cilindros turbodiesel",
-      "Potência": "54 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x2 / 4x4 (conforme versão)",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": "Agrale 4 Cilindros",
+      "Potência": "40 cv (29,4 kW) - 2.400 rpm",
+      "Transmissão": " Carraro T50 (T4.0",
+      "Tanque de Combustível": " 44 L",
     },
     highlights: ["Tecnologia embarcada", "Conforto para o operador", "Produtividade no campo", "Economia de combustível"],
   },
@@ -678,16 +790,18 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Compacto, ágil e potente",
     image: trator575Compact,
     image2: trator575Compact,
-    gallery: [trator575Compact, trator575Super],
+    datasheetUrl: "/datasheets/trator-575-compact-atualizado - fixa tecnica.pdf", 
+
+    gallery: [trator575, trator5752, trator5753, trator5754, trator5755],
     description:
       "Versão compacta da linha 575, ideal para operações em espaços reduzidos, entrelinhas de cultivo e propriedades que exigem agilidade sem perder potência.",
     specifications: {
-      "Motorização": "3 cilindros turbodiesel",
-      "Potência": "75 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x4",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": "PERKINS 1104D - 44",
+      "Potência": "76,1 cv (55,9 kW) - 2.200 RPM ",
+      "Torque": "26,6 kgf.m (261 Nm) a 1.700 rpm",
+      "Giro Nominal": "540 a 2000 rpm do motor 540 (Eco) a 1600 rpm do motor",
+      "Embreagem": "Duplo disco a seco",
+      "Tanque de combustível": "70 L",
     },
     highlights: ["Formato compacto", "Ideal para entrelinhas", "Potência da linha 575", "Robustez mecânica"],
   },
@@ -700,16 +814,15 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Mais força para operações exigentes",
     image: trator575Super,
     image2: trator575Super,
-    gallery: [trator575Super, trator575Compact],
+    datasheetUrl: "/datasheets/trator-575-super-atualizado - fixa tecnica.pdf", 
+    gallery: [super575, super5752, super5753 ,super5754 ,super5755],
     description:
       "Versão Super da linha 575, com reforços mecânicos para operações mais exigentes, mantendo a economia e a confiabilidade que marcam a linha agrícola Agrale.",
     specifications: {
-      "Motorização": "3 cilindros turbodiesel",
-      "Potência": "75 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x4",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": "PERKINS 1104D - 44",
+      "Potência": "76,1 cv (55,9 kW) - 2.200 rpm (SAEJ1995)",
+      "Transmissão": "Mecânica Sincronizada",
+      "Tanque de combustível": "94 L",
     },
     highlights: ["Reforço mecânico para uso intenso", "Confiabilidade contínua", "Economia de combustível", "Versatilidade de aplicações"],
   },
@@ -722,16 +835,17 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Potência intermediária para produtividade no campo",
     image: trator5105,
     image2: trator5105,
-    gallery: [trator5105, trator6185],
+    datasheetUrl: "/datasheets/trator-5105-atualizado - fixa tecnica.pdf", 
+    gallery: [traot5105, traot51052, traot51053, traot51054, traot51055, traot51056, traot51057],
     description:
       "O Trator 5105 oferece potência intermediária, ideal para operações de preparo de solo, plantio e tração de implementos de médio porte.",
     specifications: {
-      "Motorização": "4 cilindros turbodiesel",
-      "Potência": "105 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x4",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": "PERKINS / 1104D-44TA",
+      "Potência": " 105,6 cv (77,6kW) - 2.200 rpm (SAEJ1995)",
+      "Torque": " 42 kgf.m (412 N.m) a 1.400 rpm",
+      "Tanque Combustível": "90 L",
+      "Capacidade levante": "4.200 Kg",
+      "DIREÇÃO": "Hidráulica e hidrostática. Telescópica e escamoteável"
     },
     highlights: ["Potência intermediária versátil", "Tração 4x4", "Tecnologia de ponta", "Alta produtividade"],
   },
@@ -744,16 +858,17 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Alta potência para grandes operações",
     image: trator6185,
     image2: trator6185,
-    gallery: [trator6185, trator7215],
+    gallery: [trator61856, trator61855, trator61854, trator61853, trator61852, trator61857],
+    datasheetUrl: "/datasheets/trator-6185-atualizado - fixa tecnica.pdf", 
     description:
       "Com alta potência, o Trator 6185 é indicado para grandes propriedades e operações que demandam tração de implementos pesados com eficiência.",
     specifications: {
-      "Motorização": "4 cilindros turbodiesel",
-      "Potência": "185 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x4",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": "MWM 229-6 TCE TURBO",
+      "Potência": "175 cv (NBR ISO 14396)",
+      "Torque": "72 Kgf.m a 1.300 - 1.500 rpm",
+      "Tanque Combustível": "280 L",
+      "Número de marchas": "24 Frente / 12 Ré",
+      "Capacidade levante": "6.700 kg"
     },
     highlights: ["Alta potência", "Tecnologia de ponta", "Economia de combustível", "Robustez para grandes operações"],
   },
@@ -766,16 +881,17 @@ export const VEHICLES: Vehicle[] = [
     tagline: "O topo de linha da Agrale para grandes propriedades",
     image: trator7215,
     image2: trator7215,
-    gallery: [trator7215, trator6185],
+    gallery: [trator72154, trator72155, trator72153, trator72152],
+    datasheetUrl: "/datasheets/trator-7215-atualizado - fixa tecnica.pdf", 
     description:
       "Modelo topo de linha da Agrale, o 7215 entrega máxima potência e tecnologia para grandes propriedades, com foco em produtividade e economia operacional.",
     specifications: {
-      "Motorização": "6 cilindros turbodiesel",
-      "Potência": "215 cv",
-      "Transmissão": CONSULTAR,
-      "Tração": "4x4",
-      "Peso operacional": CONSULTAR,
-      "Capacidade do tanque": CONSULTAR,
+      "Motorização": "MWM Maxx Force 6.0A",
+      "Potência": "220 cv (ISO 14396)",
+      "Transmissão": "Mecânica Sincronizada",
+      "Torque": "74,4 kgf.m (730 N.m) a 1.350 - 1.650 rpm",
+      "Peso de embarque": "8.430 kg",
+      "Tanque Combustível": "460 L",
     },
     highlights: ["Topo de linha Agrale", "Máxima produtividade", "Tecnologia avançada", "Economia operacional em grande escala"],
   },
@@ -783,20 +899,20 @@ export const VEHICLES: Vehicle[] = [
     id: "trator-rebocador-4100",
     category: "tratores",
     subcategory: "industriais",
-    name: "Trator Rebocador 4100 Industrial",
-    slug: "trator-rebocador-4100",
+    name: "Rebocador 4100",
+    slug: "rebocador-4100",
     tagline: "Versatilidade para a movimentação de cargas",
     image: tratorRebocador4100,
     image2: tratorRebocador4100,
+    datasheetUrl: "/datasheets/trator-rebocador-4100-industrial-atualizado - fixa tecnica.pdf", 
     gallery: [tratorIndustrial, tratorHero],
     description:
       "A linha de tratores industriais Agrale oferece força, eficiência e confiabilidade para a movimentação de cargas em ambientes industriais, logísticos e operações de pátio.",
     specifications: {
-      "Motorização": "Turbodiesel",
-      "Potência": CONSULTAR,
-      "Capacidade de reboque": CONSULTAR,
-      "Transmissão": CONSULTAR,
-      "Peso operacional": CONSULTAR,
+      "Motorização": "AGRALE",
+      "Potência": "14,7 cv (10,8 kW) a 2.750 rpm",
+      "Torque": "3,9 daNm - 4,0 kgf.m a 2.350 rpm (NBRISO 1585)",
+      "Tanque Combustível": "19,6 L",
     },
     highlights: ["Alto desempenho", "Baixo custo de manutenção", "Economia operacional", "Confiabilidade contínua"],
   },
@@ -804,219 +920,223 @@ export const VEHICLES: Vehicle[] = [
     id: "trator-rebocador-4100-gas",
     category: "tratores",
     subcategory: "industriais",
-    name: "Trator Rebocador 4100 Gás",
-    slug: "trator-rebocador-4100-gas",
+    name: "Rebocador 4100 Gás",
+    slug: "rebocador-4100-gas",
     tagline: "Movimentação de cargas com menor emissão",
     image: tratorRebocador4100gas,
     image2: tratorRebocador4100gas,
+    datasheetUrl: "/datasheets/trator-agrale-4100-gas.pdf", 
     gallery: [tratorHero, tratorIndustrial],
     description:
       "Versão a gás do Rebocador 4100, indicada para operações industriais e logísticas internas que buscam reduzir emissões sem abrir mão de força e confiabilidade.",
     specifications: {
-      "Combustível": "GNV",
-      "Motorização": "A gás",
-      "Potência": CONSULTAR,
-      "Capacidade de reboque": CONSULTAR,
-      "Transmissão": CONSULTAR,
+      "Motorização": "Vanguard 627 V-Twin",
+      "Potência": "16,2CV a 3200 rpm",
+      "Tanque de Combustível": "Cilindro Gás 20 Kg",
+      "Transmissão": "Mecânica com 7 à frente e 3 à ré",
     },
     highlights: ["Menor emissão de poluentes", "Ideal para uso interno/industrial", "Robustez Agrale", "Baixo custo operacional"],
   },
 
   // ================================ MARRUÁ ================================
   {
-    id: "marrua-am200-mo",
+    id: "am200-mo",
     category: "marrua",
     subcategory: "civil",
-    name: "Marruá AM200 MO",
-    slug: "marrua-am200-mo",
+    name: "AM200 MO",
+    slug: "am200-mo",
     tagline: "DNA militar adaptado para o uso civil",
     image: marruaAM200MO,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM200MO, marruaCivilGenerico, marruaAM200MOEscolar],
+    image2: marruaAM200MO,
+    datasheetUrl: "/datasheets/am200-mo-atualizado - fixa tecnica.pdf",
+    gallery: [am200m02, am200m0],
     description:
       "O Marruá AM200 MO leva a robustez e a confiabilidade do DNA militar Agrale para operações civis, off-road e uso urbano, com baixo custo de manutenção.",
     specifications: {
-      "Motorização": "Cummins ISF turbodiesel",
-      "Tração": "4x4",
-      "Peso": "≈ 2.460 kg",
-      "Comprimento": "≈ 3,8 m",
-      "Largura": "≈ 1,92 m",
-      "Altura": "≈ 1,95 m",
-      "Capacidade": "4 a 6 ocupantes",
-      "Velocidade máxima": "≈ 128 km/h",
-      "Autonomia": "≈ 1.000 km",
+      "Motorização": "Cummins F3.8",
+      "Potência": "170 cv (125 kW) a 2.600 rpm",
+      "Tanque de combustível": "95 L (divididos em dois tanques)",
+      "Torque": "600 Nm 1.200 a 1.900 rpm",
+      "lugares": "11 (Motorista + 10 passageiros)",
+      "Peso Bruto Total (PBT)": "5.000 Kg",
     },
     highlights: ["DNA militar adaptado ao uso civil", "Off-road e uso urbano", "Baixo custo de manutenção", "Robustez e confiabilidade"],
   },
   {
-    id: "marrua-am200-mo-escolar",
+    id: "am200-mo-escolar",
     category: "marrua",
     subcategory: "civil",
-    name: "Marruá AM200 MO Escolar",
-    slug: "marrua-am200-mo-escolar",
+    name: "AM200 MO Escolar",
+    slug: "am200-mo-escolar",
     tagline: "Transporte escolar robusto para qualquer terreno",
     image: marruaAM200MOEscolar,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM200MOEscolar, marruaAM200MO, marruaCivilGenerico],
+    image2: marruaAM200MOEscolar,
+    datasheetUrl: "/datasheets/am200-mo-escolar-atualizado - fixa tecnica.pdf",
+    gallery: [am200escolar, am200escolar2, am200escolar3, am200escolar4],
     description:
       "Versão adaptada para transporte escolar em áreas rurais e de difícil acesso, unindo a robustez 4x4 do Marruá à segurança necessária para o transporte de estudantes.",
     specifications: {
-      "Motorização": "Cummins ISF turbodiesel",
-      "Tração": "4x4",
-      "Capacidade": "Conforme configuração escolar",
-      "Peso": "≈ 2.460 kg",
-      "Comprimento": "≈ 3,8 m",
-      "Aplicação": "Transporte escolar rural",
+      "Motorização": "Cummins F3.8 Turbo Diesel",
+      "Torque": "600 Nm 1.200 a 1.900 rpm",
+      "Lugares": "15 passageiros (Motorista e Ajudante + 13 passageiros)",
+      "Potência": "170 cv",
+      "Peso Bruto Total (PBT)": "5.000 Kg",
+      "Tanque de combustível": "95 L"
     },
     highlights: ["Acesso a áreas rurais de difícil chegada", "Robustez 4x4", "Segurança para transporte de estudantes", "Baixo custo de manutenção"],
   },
   {
-    id: "marrua-am250-cabine-dupla",
+    id: "am250-cabine-dupla",
     category: "marrua",
     subcategory: "civil",
-    name: "Marruá AM250 Cabine Dupla",
-    slug: "marrua-am250-cabine-dupla",
+    name: "AM250 Cabine Dupla",
+    slug: "am250-cabine-dupla",
     tagline: "Versatilidade para operações civis e corporativas",
     image: marruaAM250Dupla,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM250Dupla, marruaAM250Simples, marruaCivilGenerico],
+    image2: marruaAM250Dupla,
+    datasheetUrl: "/datasheets/am250-cabine-simples-atualizado - fixa tecnica.pdf",
+    dimensionsUrl: "/dimensions/AM250.jpg",
+    gallery: [am200cabinedupla, am200cabinedupla2, am200cabinedupla3 ,am200cabinedupla4 ,am200cabinedupla5 ,am200cabinedupla6 ,am200cabinedupla7 ,am200cabinedupla8 ,am200cabinedupla9 ,am200cabinedupla10,am200cabinedupla11,am200cabinedupla12 ,am200cabinedupla13 ,am200cabinedupla14 ,am200cabinedupla15 ,am200cabinedupla16 ,am200cabinedupla17 ,am200cabinedupla18,am200cabinedupla19],
     description:
       "Com cabine dupla, o AM250 é indicado para operações que exigem transporte de equipe e carga simultaneamente, mantendo a tração 4x4 e a robustez da linha Marruá.",
     specifications: {
-      "Motorização": "Cummins F38 turbodiesel",
-      "Potência": "≈ 175 cv",
-      "Tração": "4x4",
-      "Transmissão": "Manual 5 marchas / Automática 6 marchas (conforme versão)",
-      "Capacidade": "5 ocupantes",
-      "Suspensão": "Independente 4x4",
+      "Motorização": "Cummins F3.8 Turbo Diesel",
+      "Potência": "170 cv",
+      "Torque": "600 Nm a 1.200 - 1.900 RPM",
+      "Peso Bruto Total (PBT):": "5.700 Kg",
+      "Tanque de combustível":" 95 L",
+      "Lugares": "5 pessoas"
     },
     highlights: ["Cabine dupla para equipe e carga", "Tração 4x4", "Suspensão de longo curso", "Robustez militar adaptada ao civil"],
   },
   {
-    id: "marrua-am250-cabine-simples",
+    id: "am250-cabine-simples",
     category: "marrua",
     subcategory: "civil",
-    name: "Marruá AM250 Cabine Simples",
-    slug: "marrua-am250-cabine-simples",
+    name: "AM250 Cabine Simples",
+    slug: "am250-cabine-simples",
     tagline: "Foco em capacidade de carga",
     image: marruaAM250Simples,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM250Simples, marruaAM250Dupla, marruaCivilGenerico],
+    image2: marruaAM250Simples,
+    datasheetUrl: "/datasheets/am250-cabine-simples-atualizado - fixa tecnica.pdf",
+    gallery: [am200cabinesimples, am200cabinesimples2, am200cabinesimples3, am200cabinesimples4, am200cabinesimples5, am200cabinesimples6, am200cabinesimples7, am200cabinesimples8, am200cabinesimples9, am200cabinesimples10],
     description:
       "Versão cabine simples do AM250, otimizada para maior capacidade de carga útil, mantendo o desempenho 4x4 característico da linha Marruá.",
     specifications: {
-      "Motorização": "Cummins F38 turbodiesel",
-      "Potência": "≈ 175 cv",
-      "Tração": "4x4",
-      "Transmissão": "Manual 5 marchas / Automática 6 marchas (conforme versão)",
-      "Capacidade": "2 a 3 ocupantes + carga",
-      "Suspensão": "Independente 4x4",
+      "Motorização": "Cummins F3.8 Turbo Diesel",
+      "Potência": "170 cv",
+      "Torque": "600 Nm a 1.200 - 1.900 rpm",
+      "Peso Bruto Total (PBT):": "5.700 kg",
+      "Lugares": "2 pessoas",
+      "Tanque de combustível": "95 L"
     },
     highlights: ["Maior capacidade de carga útil", "Tração 4x4", "Robustez e confiabilidade", "Baixo custo de manutenção"],
   },
   {
-    id: "marrua-am11-reconhecimento",
+    id: "am11-reconhecimento",
     category: "marrua",
     subcategory: "defesa-e-seguranca",
-    name: "Marruá AM11 Reconhecimento",
-    slug: "marrua-am11-reconhecimento",
+    name: "AM11 Reconhecimento",
+    slug: "am11-reconhecimento",
     tagline: "Missões críticas e reconhecimento em qualquer terreno",
     image: marruaAM11Reconhecimento,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM11Reconhecimento, marruaAM31, marruaAM21VTNE],
+    image2: marruaAM11Reconhecimento,
+    datasheetUrl: "/datasheets/viatura-militar-br-am11-reconhecimento-atualizado - fixa tecnica.pdf",
+    gallery: [ am11galeria ,am11galeria1  ,am11galeria2  ,am11galeria3  ,am11galeria4  ,am11galeria5  ,am11galeria6  ,am11galeria7  ,am11galeria8  ,am11galeria9  ,am11galeria10 ,am11galeria11 ,am11galeria12 ,am11galeria13 ,am11galeria14 ,am11galeria15 ,am11galeria16 ,am11galeria17 ,am11galeria18],
     description:
       "Desenvolvido para missões de reconhecimento, o AM11 combina tração 4x4, suspensão de longo curso e confiabilidade mecânica para operar em condições operacionais críticas.",
     specifications: {
-      "Motorização": "MWM turbodiesel 4 cilindros",
-      "Potência": "≈ 132 cv (98 kW)",
-      "Tração": "4x4",
-      "Suspensão": "Independente de longo curso",
-      "Aplicação": "Reconhecimento e missões táticas",
-      "Velocidade máxima": "≈ 128 km/h",
+      "Motorização": "Cummins ISF 3.8 Euro III",
+      "Potência": "167 cv",
+      "Lugares": " 5 (motorista + 4 passageiros)",
+      "Torque": "600 Nm 1.200 a 1.900 rpm",
     },
     highlights: ["Tração 4x4", "Suspensão de longo curso", "Missões de reconhecimento", "Robustez militar"],
   },
   {
-    id: "marrua-am21-vtne",
+    id: "am21-vtne",
     category: "marrua",
     subcategory: "defesa-e-seguranca",
-    name: "Marruá AM21 VTNE 3/4 Ton",
-    slug: "marrua-am21-vtne-3-4-ton",
+    name: "AM21 VTNE 3/4 Ton",
+    slug: "am21-vtne-3-4-ton",
     tagline: "Transporte de tropas e cargas táticas",
     image: marruaAM21VTNE,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM21VTNE, marruaAM23VTNE, marruaAM11Reconhecimento],
+    image2: marruaAM21VTNE,
+    datasheetUrl: "/datasheets/viatura-militar-br-am21---vtne-ton-atualizado - fixa tecnica.pdf",
+    gallery: [am21galeria  ,am21galeria1  ,am21galeria2  ,am21galeria3  ,am21galeria4  ,am21galeria5  ,am21galeria6  ,am21galeria7  ,am21galeria8  ,am21galeria9  ,am21galeria10 ,am21galeria11 ,am21galeria12 ,am21galeria13 ,am21galeria14 ,am21galeria15],
     description:
       "Veículo de Transporte Não Especializado (VTNE) com capacidade de 3/4 de tonelada, indicado para transporte de tropas, equipamentos e apoio logístico em operações militares.",
     specifications: {
-      "Motorização": "Cummins turbodiesel",
-      "Tração": "4x4",
-      "Capacidade de carga": "3/4 de tonelada",
-      "Suspensão": "Independente de longo curso",
-      "Aplicação": "Transporte de tropas e ambulância",
+      "Motorização": " Cummins ISF 3.8 Euro III",
+      "Potência": " 123 kW (167 cv) A 2.600 RPM",
+      "Torque": "600 Nm 1.100 - 1.700 RPM",
+      "Tanque de combustível": "95 L",
     },
     highlights: ["Transporte de tropas e ambulância", "Tração 4x4", "Suspensão de longo curso", "Missões críticas"],
   },
   {
-    id: "marrua-am23-chassi-cabine",
+    id: "m23-chassi-cabine",
     category: "marrua",
     subcategory: "defesa-e-seguranca",
-    name: "Marruá AM23 Chassi Cabine",
-    slug: "marrua-am23-chassi-cabine",
+    name: "AM23 Chassi Cabine",
+    slug: "am23-chassi-cabine",
     tagline: "Plataforma versátil para carrocerias especiais",
     image: marruaAM23Chassi,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM23Chassi, marruaAM23VTNE, marruaAM21VTNE],
+    image2: marruaAM23Chassi,
+    datasheetUrl: "/datasheets/viatura-militar-br-am23-chassi-cabine-atualizado - fixa tecnica.pdf",
+    gallery: [AM23galeria, AM23galeria2, AM23galeria3, AM23galeria4],
     description:
       "Configuração chassi-cabine do AM23, pensada para receber carrocerias e implementos especiais em aplicações de defesa e segurança pública.",
     specifications: {
-      "Motorização": "Cummins turbodiesel",
-      "Tração": "4x4",
-      "Configuração": "Chassi-cabine",
-      "Suspensão": "Independente de longo curso",
-      "Aplicação": "Carrocerias e implementos especiais",
+      "Motorização": "Cummins ISF 3.8 Euro III",
+      "Torque": "600 Nm @ 1.100 - 1.700 rpm",
+      "Potência": " 123 kW (167 cv) A 2.600 rpm",
+      "Número de marchas": "5 Frente / 1 Ré",
+      "Marca / Modelo Transmissão": "EATON ESO 6205",
+      "Freio de Serviço": "Tipo Disco nas 04 rodas"
     },
     highlights: ["Plataforma versátil chassi-cabine", "Tração 4x4", "Robustez para uso intensivo", "Suporte a implementos especiais"],
   },
   {
-    id: "marrua-am23-vtne",
+    id: "am23-vtne",
     category: "marrua",
     subcategory: "defesa-e-seguranca",
-    name: "Marruá AM23 VTNE 3/4 Ton",
-    slug: "marrua-am23-vtne-3-4-ton",
+    name: "AM23 VTNE 3/4 Ton",
+    slug: "m23-vtne-3-4-ton",
     tagline: "Nova geração do VTNE 3/4 de tonelada",
     image: marruaAM23VTNE,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM23VTNE, marruaAM21VTNE, marruaAM23Chassi],
+    image2: marruaAM23VTNE,
+    datasheetUrl: "/datasheets/viatura-militar-br-am23---vtne-ton-atualizado - fixa tecnica.pdf",
+    gallery: [AM23ambulancia ,AM23ambulancia2  ,AM23ambulancia3  ,AM23ambulancia4  ,AM23ambulancia5  ,AM23ambulancia6  ,AM23ambulancia7  ,AM23ambulancia8  ,AM23ambulancia9  ,AM23ambulancia10 ,AM23ambulancia11],
     description:
       "Evolução da linha VTNE, o AM23 mantém a capacidade de 3/4 de tonelada com atualizações mecânicas que reforçam confiabilidade e desempenho em operações táticas.",
     specifications: {
-      "Motorização": "Cummins turbodiesel",
-      "Tração": "4x4",
-      "Capacidade de carga": "3/4 de tonelada",
-      "Suspensão": "Independente de longo curso",
-      "Aplicação": "Transporte tático e apoio logístico",
+      "Motorização": "Cummins ISF 3.8 Euro III",
+      "Potência": "167 cv",
+      "Torque": "600 Nm 1.200 a 1.900 RPM",
+      "Cabine": " Simples - 2 lugares",
     },
     highlights: ["Nova geração VTNE", "Tração 4x4", "Confiabilidade reforçada", "Missões táticas e reconhecimento"],
   },
   {
-    id: "marrua-am31",
+    id: "am31",
     category: "marrua",
     subcategory: "defesa-e-seguranca",
-    name: "Marruá AM31",
-    slug: "marrua-am31",
+    name: "AM31",
+    slug: "am31",
     tagline: "Máxima capacidade operacional da linha Defesa e Segurança",
     image: marruaAM31,
-    image2: caminhaoLeveGenerico,
-    gallery: [marruaAM31, marruaAM11Reconhecimento, marruaAM23VTNE],
+    image2: marruaAM31,
+    datasheetUrl: "/datasheets/viatura-militar-br-am31-atualizado - fixa tecnica.pdf",
     description:
       "O AM31 é o modelo de maior capacidade da linha Defesa e Segurança, projetado para as missões mais exigentes com robustez estrutural e desempenho em qualquer terreno.",
     specifications: {
-      "Motorização": "Cummins turbodiesel",
-      "Tração": "4x4",
-      "Suspensão": "Independente de longo curso",
-      "Aplicação": "Missões de alta exigência operacional",
-      "Velocidade máxima": "≈ 128 km/h",
+      "Motorização": "Cummins ISF 3.8 Euro III",
+      "Torque": " 600 Nm A 1.100 - 1.700 rpm",
+      "Potência": "123 kW (167 cv) A 2.600 rpm",
+      "Tanque de combustível": "95 L",
+      "Cabine": "Simples - 2 ocupantes",
+      "Número de marchas": "5 Frente / 1 Ré"
     },
     highlights: ["Máxima capacidade operacional", "Robustez estrutural", "Desempenho em qualquer terreno", "Confiabilidade em missões críticas"],
   },

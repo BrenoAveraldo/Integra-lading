@@ -13,6 +13,8 @@ import {
   ShieldCheck,
   FileDown,
   Maximize2,
+  Tractor,
+  Bolt,
 } from "lucide-react";
 
 interface ProductSpecsProps {
@@ -42,7 +44,7 @@ function iconForLabel(label: string): ComponentType<{ size?: number; color?: str
   if (l.includes("dimens") || l.includes("comprimento") || l.includes("largura") || l.includes("altura") || l.includes("entre-eixos") || l.includes("entre eixos")) return Ruler;
   if (l.includes("peso") || l.includes("massa") || l.includes("tara")) return Weight;
   if (l.includes("passageiro") || l.includes("lugares") || l.includes("ocupantes")) return Users;
-  return Settings2;
+  return Bolt;
 }
 
 export function ProductSpecs({ specifications, highlights, datasheetUrl, dimensionsUrl }: ProductSpecsProps) {
