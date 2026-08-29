@@ -15,6 +15,7 @@ export function ProductGallery({ images, alt }: ProductGalleryProps) {
   const touchStartX = useRef<number | null>(null);
 
   const hasMultiple = images.length > 1;
+  const isFirstRender = useRef(true);
 
   const goTo = useCallback(
     (i: number) => {
@@ -27,7 +28,15 @@ export function ProductGallery({ images, alt }: ProductGalleryProps) {
   const goPrev = useCallback(() => goTo(active - 1), [active, goTo]);
 
   // Mantém a miniatura ativa sempre visível na tira, mesmo com muitas fotos.
+  // Só faz isso quando o usuário TROCA de foto (não na primeira renderização
+  // da página) — sem esse cuidado, a página inteira rolava sozinha até a
+  // galeria assim que a rota abria, já que scrollIntoView também dispara
+  // no efeito inicial.
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
     thumbRefs.current[active]?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
   }, [active]);
 
