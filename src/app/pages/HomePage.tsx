@@ -1,4 +1,6 @@
 import { useNavigation } from "../NavigationContext";
+import { useDocumentHead } from "../hooks/useDocumentHead";
+import { HOME_SEO } from "../../data/seo";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { VehicleShowcase } from "../components/VehicleShowcase";
@@ -19,6 +21,7 @@ const HOME_STATS = [
 
 export function HomePage() {
   const { activeTab } = useNavigation();
+  useDocumentHead(HOME_SEO.title, HOME_SEO.description);
 
   return (
     <>

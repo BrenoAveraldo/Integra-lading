@@ -1,5 +1,6 @@
 import { Navigate, useParams } from "react-router";
 import { getCategory, getSubcategory, getVehicleBySlug } from "../../data/vehicles";
+import { useDocumentHead } from "../hooks/useDocumentHead";
 import { Breadcrumb } from "../components/catalog/Breadcrumb";
 import { ProductHero } from "../components/catalog/ProductHero";
 import { ProductSpecs } from "../components/catalog/ProductSpecs";
@@ -9,6 +10,15 @@ import { ProductCTA } from "../components/catalog/ProductCTA";
 export function ProductPage() {
   const { slug } = useParams<{ slug: string }>();
   const vehicle = slug ? getVehicleBySlug(slug) : undefined;
+
+  const brandSuffix = vehicle && !vehicle.name.toLowerCase().includes("agrale") ? " Agrale" : "";
+  const taglineClean = vehicle?.tagline.replace(/[.\s]+$/, "");
+  useDocumentHead(
+    vehicle ? `${vehicle.name}${brandSuffix} | Preço e Ficha Técnica | Integra São Luís - MA` : "Integra Veículos",
+    vehicle
+      ? `${taglineClean}. Conheça o ${vehicle.name} da Agrale e fale com a Integra, concessionária autorizada em São Luís, Maranhão.`
+      : ""
+  );
 
   if (!vehicle) return <Navigate to="/" replace />;
 

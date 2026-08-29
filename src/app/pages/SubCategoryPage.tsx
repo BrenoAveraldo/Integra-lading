@@ -1,5 +1,6 @@
 import { Navigate, useParams } from "react-router";
 import { getCategory, getSubcategory, getVehiclesBySubcategory } from "../../data/vehicles";
+import { useDocumentHead } from "../hooks/useDocumentHead";
 import { Breadcrumb } from "../components/catalog/Breadcrumb";
 import { VehicleCard } from "../components/catalog/VehicleCard";
 
@@ -7,6 +8,15 @@ export function SubCategoryPage() {
   const { category, subcategory } = useParams<{ category: string; subcategory: string }>();
   const categoryData = category ? getCategory(category) : undefined;
   const subData = category && subcategory ? getSubcategory(category, subcategory) : undefined;
+
+  useDocumentHead(
+    categoryData && subData
+      ? `${subData.name} ${categoryData.name} Agrale | Integra São Luís - MA`
+      : "Integra Veículos",
+    categoryData && subData
+      ? `${subData.shortDescription}. Confira os modelos ${categoryData.name.toLowerCase()} disponíveis na Integra, concessionária autorizada Agrale em São Luís, Maranhão.`
+      : ""
+  );
 
   if (!categoryData || !subData) return <Navigate to="/" replace />;
 

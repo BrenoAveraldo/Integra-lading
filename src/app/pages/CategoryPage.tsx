@@ -1,11 +1,16 @@
 import { Link, Navigate, useParams } from "react-router";
 import { getCategory, getSubcategoryVariant } from "../../data/vehicles";
+import { CATEGORY_SEO } from "../../data/seo";
+import { useDocumentHead } from "../hooks/useDocumentHead";
 import { Breadcrumb } from "../components/catalog/Breadcrumb";
 import { Tag } from "../components/shared/Tag";
 
 export function CategoryPage() {
   const { category } = useParams<{ category: string }>();
   const data = category ? getCategory(category) : undefined;
+
+  const seo = data ? CATEGORY_SEO[data.slug] : undefined;
+  useDocumentHead(seo?.title ?? "Integra Veículos", seo?.description ?? "");
 
   if (!data) return <Navigate to="/" replace />;
 
