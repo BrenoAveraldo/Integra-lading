@@ -128,7 +128,8 @@ export function ProductSpecs({ specifications, highlights, datasheetUrl, dimensi
                   background: "#f8f8f8",
                   borderLeft: `3px solid ${RED}`,
                   transition: "transform 0.2s ease, background 0.2s ease",
-                  width: "350px",
+                  maxWidth: 350,
+                  width: "100%",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = "#fff2f2";
@@ -231,7 +232,7 @@ function DocButtonPending({ icon: Icon, label }: { icon: ComponentType<{ size?: 
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24, width: 385 }}>
+    <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24, maxWidth: 385, width: "100%" }}>
       <span style={{ display: "block", width: 32, height: 2, background: RED }} />
       <h2
         style={{

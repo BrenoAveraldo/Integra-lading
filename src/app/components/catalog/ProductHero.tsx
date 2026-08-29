@@ -1,3 +1,4 @@
+import { useIsMobile } from "../../hooks/useIsMobile";
 import type { Vehicle, CategorySlug } from "../../../data/vehicles";
 
 interface ProductHeroProps {
@@ -13,6 +14,7 @@ const CATEGORY_LABEL: Record<CategorySlug, string> = {
 };
 
 export function ProductHero({ vehicle }: ProductHeroProps) {
+  const isMobile = useIsMobile();
   return (
     <div style={{ background: "#1a1a1a" }}>
       <div
@@ -76,7 +78,7 @@ export function ProductHero({ vehicle }: ProductHeroProps) {
           <img
             src={vehicle.image2}
             alt={vehicle.name}
-            style={{ maxWidth: 850, marginTop: 21, objectFit: "contain" }}
+            style={{ width: "120%", maxWidth: isMobile ? 300 : 850, marginTop: 21, objectFit: "contain" }}
           />
         </div>
       </div>
