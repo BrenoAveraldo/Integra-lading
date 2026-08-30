@@ -5,12 +5,6 @@ import { LocationSection } from "./LocationSection";
 
 const CONTACT_EMAIL = "integra.servicos.ma@gmail.com";
 
-// ID do formulário no Formspree (ex: "myzknbjq").
-// Crie a conta em https://formspree.io, crie um formulário e cole o ID aqui,
-// ou defina VITE_FORMSPREE_FORM_ID no seu arquivo .env (não versionar o .env).
-const FORMSPREE_FORM_ID = import.meta.env.VITE_FORMSPREE_FORM_ID || "SEU_FORM_ID_AQUI";
-const FORMSPREE_ENDPOINT = `https://formspree.io/f/${FORMSPREE_FORM_ID}`;
-
 interface ContactFormState {
   name: string;
   email: string;
@@ -46,23 +40,23 @@ function ContactForm() {
     setStatus("sending");
 
     try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { Accept: "application/json", "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
           email: form.email,
           phone: form.phone || undefined,
           message: form.message,
-          _subject: `Contato pelo site — ${form.name}`,
         }),
       });
 
       if (response.ok) {
         setStatus("sent");
       } else {
+        const data = await response.json().catch(() => null);
         setStatus("error");
-        setError(`Não foi possível enviar agora. Tente novamente ou escreva direto para ${CONTACT_EMAIL}.`);
+        setError(data?.error || `Não foi possível enviar agora. Tente novamente ou escreva direto para ${CONTACT_EMAIL}.`);
       }
     } catch {
       setStatus("error");
