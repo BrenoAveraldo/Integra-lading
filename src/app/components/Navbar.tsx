@@ -65,7 +65,7 @@ export function Navbar() {
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
     { icon: Instagram, href: "https://instagram.com/integraveiculos", label: "Instagram" },
-    { icon: WhatsappIcon, href: "https://web.whatsapp.com/", label: "Whatsapp" },
+    { icon: WhatsappIcon, href: "https://wa.me/559820168515?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.", label: "Whatsapp" },
   ];
 
   // Considera um link "ativo" se a aba correspondente estiver aberta

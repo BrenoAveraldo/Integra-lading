@@ -33,7 +33,7 @@ import ca11000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 11.000 GÁS.p
 import ca15000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 15.000.png";
 import ca18000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 18.000.png";
 import caEXT4x4 from "../imports/images/caminhao/Caminhão Agrale EXT 4x4 (Truck Home).png";
-
+import CAMINHAOCAPA from "../imports/images/caminhao/CAMINHAO-1.png";
 
 
 // Ônibus / Chassis
@@ -52,7 +52,7 @@ import MA11gasgaleria3 from "../imports/images/onibus/m11 - galeria2.jpg"
 import MA11gasgaleria4 from "../imports/images/onibus/m11 - galeria3.jpg"
 import MA11gasgaleria from "../imports/images/onibus/m11 - galeria4.jpg"
 import MA11gasgaleria5 from "../imports/images/onibus/m11 - galeria5.jpg"
-
+import ONIBUSCAPA from "../imports/images/onibus/CHASSIS-3.png"
 
 // Tratores
 import trator4125 from "../imports/images/trator/TRATOR-4125-2.png";
@@ -117,7 +117,7 @@ import trator72155 from "../imports/images/trator/trator7215-galeria.jpg";
 import trator72152 from "../imports/images/trator/trator7215-galeria2.jpg";
 import trator72153 from "../imports/images/trator/trator7215-galeria3.jpg";
 import trator72154 from "../imports/images/trator/trator7215-galeria4.jpg";
-
+import TRATORCAPA from "../imports/images/trator/TRATOR-2.png";
 
 
 // Marruá
@@ -217,7 +217,7 @@ import AM23ambulancia8 from "../imports/images/marrua/AM23 (8).jpg";
 import AM23ambulancia9 from "../imports/images/marrua/AM23 (9).jpg";
 import AM23ambulancia10 from "../imports/images/marrua/AM23 (10).jpg";
 import AM23ambulancia11 from "../imports/images/marrua/AM23 (11).jpg";
-
+import MARRUACAPA from "../imports/images/marrua/MARRUA-3.png";
 
 
 
@@ -268,7 +268,7 @@ export const CATEGORIES: CategoryDef[] = [
     tagline: "Força e robustez para qualquer trabalho.",
     description:
       "Dos centros urbanos às aplicações mais exigentes, os caminhões Agrale oferecem excelente capacidade de carga, baixo custo operacional e alta confiabilidade. Ideais para transporte urbano, distribuição de mercadorias, serviços públicos e operações rodoviárias.",
-    heroImage: caminhaoHero,
+    heroImage: CAMINHAOCAPA,
     subcategories: [
       { slug: "leves", name: "Leves", shortDescription: "Agilidade e economia para entregas urbanas e distribuição regional", image: ca8700 },
       { slug: "medios", name: "Médios", shortDescription: "Equilíbrio entre capacidade de carga e performance operacional", image: ca15000 },
@@ -281,7 +281,7 @@ export const CATEGORIES: CategoryDef[] = [
     tagline: "Confie em quem é referência há mais de 25 anos.",
     description:
       "A Agrale é referência nacional na fabricação de chassis para ônibus e micro-ônibus, consagrada pela parceria de longa data com a Volare. Soluções para as mais diversas operações de transporte de passageiros em todo o Brasil, aliando economia, robustez e confiabilidade mecânica.",
-    heroImage: onibusHero,
+    heroImage: ONIBUSCAPA,
     subcategories: [
       { slug: "microbus", name: "Microbus", shortDescription: "Transporte urbano, escolar e fretamento", image: chassiMicrobus },
       { slug: "midibus", name: "Midibus", shortDescription: "Maior capacidade de passageiros em porte médio", image: chassiMidibus },
@@ -294,7 +294,7 @@ export const CATEGORIES: CategoryDef[] = [
     tagline: "Mais desempenho no dia a dia do campo.",
     description:
       "Projetados para atender às mais diversas operações agrícolas e industriais, os tratores Agrale unem potência, economia, robustez e tecnologia para aumentar a produtividade no campo e muito além dele.",
-    heroImage: tratorHero,
+    heroImage: TRATORCAPA,
     subcategories: [
       { slug: "agricolas", name: "Agrícolas", shortDescription: "Força no campo para maior produtividade", image: trator540TX },
       { slug: "industriais", name: "Industriais", shortDescription: "Movimentação eficiente em ambientes industriais e pátios", image: tratorIndustrial },
@@ -306,7 +306,7 @@ export const CATEGORIES: CategoryDef[] = [
     tagline: "É mais que off-road, é para todo terreno.",
     description:
       "Desenvolvido para superar os mais severos desafios, o Agrale Marruá combina robustez, tração 4x4, confiabilidade e versatilidade. Com desempenho comprovado nos mais diversos terrenos, atende aplicações civis, de defesa e segurança, sendo utilizado inclusive pelo Exército Brasileiro.",
-    heroImage: marruaHero,
+    heroImage: MARRUACAPA,
     subcategories: [
       { slug: "civil", name: "Civil", shortDescription: "Uso corporativo, público e operações logísticas", image: marruaCivilGenerico },
       { slug: "defesa-e-seguranca", name: "Defesa e Segurança", shortDescription: "Missões de alta exigência operacional", image: marruaAM31 },

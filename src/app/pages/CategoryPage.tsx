@@ -26,9 +26,9 @@ export function CategoryPage() {
             margin: "0 auto",
             padding: "0 24px",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            gridTemplateColumns: "minmax(320px, 0.8fr) minmax(450px, 1.2fr)",
             alignItems: "center",
-            gap: 48,
+            gap: 32,
             minHeight: 360,
           }}
         >
@@ -58,8 +58,25 @@ export function CategoryPage() {
               {data.description}
             </p>
           </div>
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "32px 0" }}>
-            <img src={data.heroImage} alt={data.name} style={{ width: "100%", maxWidth: 520, objectFit: "contain" }} />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+              padding: "32px 0",
+            }}
+          >
+            <img
+              src={data.heroImage}
+              alt={data.name}
+              style={{
+                width: "100%",
+                maxWidth: 650,
+                aspectRatio: "16 / 9",
+                objectFit: "contain",
+              }}
+            />
           </div>
         </div>
       </div>
@@ -97,7 +114,7 @@ export function CategoryPage() {
                 (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 4px 24px rgba(0,0,0,0.05)";
               }}
             >
-              <div style={{  padding: "28px 32px", display: "flex", justifyContent: "center", alignItems: "center", minHeight: 180 }}>
+              <div style={{ padding: "28px 32px", display: "flex", justifyContent: "center", alignItems: "center", minHeight: 180 }}>
                 <img src={sub.image} alt={sub.name} style={{ maxWidth: "100%", maxHeight: 160, objectFit: "contain" }} />
               </div>
               <div style={{ padding: "22px 24px 26px" }}>

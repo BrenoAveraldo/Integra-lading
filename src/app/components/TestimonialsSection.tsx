@@ -1,25 +1,30 @@
 import { SectionTag } from "./shared/SectionTag";
+import { Landmark, Factory, Truck } from "lucide-react";
 
-// Depoimentos de referência — troque pelos relatos reais de clientes da Integra
-// (prefeituras, transportadoras, empresas atendidas) assim que estiverem disponíveis.
-const TESTIMONIALS = [
+// Diferente de um depoimento (fala atribuída a alguém), isto é um resumo de
+// casos reais do Grupo Araujo — verificável e muito mais forte do que uma
+// citação genérica de "Cliente Corporativo" sem nome.
+const TRUST_CASES = [
   {
-    quote:
-      "A parceria com a Integra trouxe agilidade para a renovação da nossa frota. O suporte técnico pós-venda faz toda a diferença no dia a dia.",
-    name: "Cliente Corporativo",
-    role: "Setor de Transporte de Cargas",
+    icon: Landmark,
+    title: "Governo do Maranhão",
+    tag: "Programa Travessia",
+    desc:
+      "Transporte gratuito porta a porta para pessoas com deficiência, idosos e pacientes em tratamento, em parceria com o Grupo Araujo desde 2016.",
   },
   {
-    quote:
-      "Atendimento próximo e peças genuínas sempre disponíveis. Conseguimos manter os veículos operando com o mínimo de parada.",
-    name: "Cliente Público",
-    role: "Prefeitura Municipal",
+    icon: Factory,
+    title: "Vale e Alumar",
+    tag: "Grandes operações industriais",
+    desc:
+      "Suporte a projetos de grande porte no Pará, como a UHE Belo Monte, o Projeto S11D e a Mineração Onça-Puma.",
   },
   {
-    quote:
-      "Desde a consultoria na escolha do modelo até a entrega, a equipe da Integra acompanhou cada etapa com transparência.",
-    name: "Cliente Privado",
-    role: "Frota de Distribuição",
+    icon: Truck,
+    title: "Suzano S/A",
+    tag: "Região Tocantina",
+    desc:
+      "Parceria de transporte na cidade de Imperatriz desde 2009, atendendo operações da companhia na região.",
   },
 ];
 
@@ -44,7 +49,7 @@ export function TestimonialsSection() {
       />
       <div style={{ maxWidth: 1280, margin: "0 auto", position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: 64 }}>
-          <SectionTag text="Quem Confia na Integra" light centered />
+          <SectionTag text="Quem Confia no Grupo Araujo" light centered />
           <h2
             style={{
               fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
@@ -52,33 +57,54 @@ export function TestimonialsSection() {
               color: "#fff",
               textTransform: "uppercase",
               letterSpacing: "-0.01em",
+              marginBottom: 12,
               fontFamily: "'Poppins', sans-serif",
             }}
           >
-            O que dizem nossos clientes
+            Mais de 20 anos de parcerias sólidas
           </h2>
+          <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "0.95rem", maxWidth: 620, margin: "0 auto", lineHeight: 1.8, fontFamily: "'Open Sans', sans-serif" }}>
+            A experiência que a Integra traz para o setor de veículos vem da operação de transportes
+            do Grupo Araujo, hoje a maior empresa de fretamento genuinamente maranhense.
+          </p>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 0 }}>
-          {TESTIMONIALS.map((t, i) => (
-            <div key={t.name} className={`border-l border-white/15 ${i === TESTIMONIALS.length - 1 ? "border-r" : ""}`}
+          {TRUST_CASES.map((c, i) => (
+            <div key={c.title} className={`border-l border-white/15 ${i === TRUST_CASES.length - 1 ? "border-r" : ""}`}
               style={{
                 padding: "32px 32px 8px",
                 display: "flex",
                 flexDirection: "column",
               }}
             >
-              <span
+              <div
                 style={{
-                  fontSize: 56,
-                  lineHeight: 1,
-                  fontFamily: "Georgia, serif",
-                  color: "rgba(255,255,255,0.35)",
-                  marginBottom: 4,
+                  width: 48,
+                  height: 48,
+                  borderRadius: "50%",
+                  background: "rgba(255,255,255,0.12)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginBottom: 22,
                 }}
               >
-                “
-              </span>
+                <c.icon size={22} color="#fff" strokeWidth={1.75} />
+              </div>
+              <div
+                style={{
+                  fontSize: 11,
+                  fontWeight: 700,
+                  letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.6)",
+                  marginBottom: 10,
+                  fontFamily: "'Open Sans', sans-serif",
+                }}
+              >
+                {c.tag}
+              </div>
               <p
                 style={{
                   color: "rgba(255,255,255,0.92)",
@@ -89,7 +115,7 @@ export function TestimonialsSection() {
                   fontFamily: "'Open Sans', sans-serif",
                 }}
               >
-                {t.quote}
+                {c.desc}
               </p>
               <div
                 style={{
@@ -101,10 +127,7 @@ export function TestimonialsSection() {
                 }}
               >
                 <span style={{ display: "block", width: 6, height: 6, background: "#fff", opacity: 0.7, transform: "rotate(45deg)", flexShrink: 0 }} />
-                <div>
-                  <div style={{ color: "#fff", fontSize: 14, fontWeight: 700, fontFamily: "'Poppins', sans-serif" }}>{t.name}</div>
-                  <div style={{ color: "rgba(255,255,255,0.65)", fontSize: 12.5, fontFamily: "'Open Sans', sans-serif" }}>{t.role}</div>
-                </div>
+                <div style={{ color: "#fff", fontSize: 14, fontWeight: 700, fontFamily: "'Poppins', sans-serif" }}>{c.title}</div>
               </div>
             </div>
           ))}

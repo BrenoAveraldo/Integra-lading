@@ -24,9 +24,12 @@ export function ServicesSection() {
             <p style={{ color: "#666", fontSize: "0.95rem", maxWidth: 520, margin: "0 auto", lineHeight: 1.8, fontFamily: "'Open Sans', sans-serif" }}>
               A Integra oferece atendimento especializado durante toda a jornada do cliente, com suporte completo antes, durante e após a compra.
             </p>
+            <p style={{ color: "#C8102E", fontSize: 13, fontWeight: 700, marginTop: 14, letterSpacing: "0.02em", fontFamily: "'Poppins', sans-serif" }}>
+              Apoiada pela experiência de mais de 20 anos do Grupo Araujo administrando frotas.
+            </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 24 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: 24 }}>
             {SERVICES.map((service) => (
               <div
                 key={service.title}
@@ -64,11 +67,10 @@ export function ServicesSection() {
             <div>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {[
-                  "Continuar evoluindo.",
-                  "Investir em tecnologia.",
-                  "Fortalecer parcerias.",
-                  "Gerar resultados para nossos clientes.",
-                  "Porque mais importante do que vender veículos é entregar confiança para cada quilômetro percorrido.",
+                  "Presença da marca Agrale em todo o território nacional.",
+                  "Garantia de fábrica reconhecida em qualquer unidade Agrale do país.",
+                  "Recall e campanhas de segurança comunicados automaticamente pela marca.",
+                  "Suporte que acompanha você mesmo fora do Maranhão.",
                 ].map((item, i, arr) => (
                   <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: 16, paddingBottom: 18, marginBottom: 18, borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.07)" : "none" }}>
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ flexShrink: 0, marginTop: 4 }}>

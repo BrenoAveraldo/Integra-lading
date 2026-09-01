@@ -70,7 +70,7 @@ const SOCIAL_LINKS = [
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/integraveiculos" },
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
   { icon: Youtube, label: "YouTube", href: "https://youtube.com" },
-  { icon: WhatsappIcon, label: "WhatsApp", href: "https://web.whatsapp.com/" },
+  { icon: WhatsappIcon, label: "WhatsApp", href: "https://wa.me/559820168515?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es./" },
 ];
 
 const PRODUCT_LINES = ["Caminhões Agrale", "Ônibus", "Tratores Agrale", "Utilitários Marruá"];
@@ -156,28 +156,29 @@ export function Footer({ variant = "light" }: FooterProps) {
           <FooterColumn title="Contato" v={v}>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               <FooterInfoRow icon={MapPin} v={v}>
-                Rodovia Engenheiro Emiliano Macieira,<br />
-                Km 06, nº 104, Galpão 02<br />
-                CEP 65095-602
+               RD BR 135 KM 6,4,<br />
+               Vila Sarney - Maracanã,<br />
+               São Luís - MA, <br/>
+               CEP: 65095-602
               </FooterInfoRow>
               <FooterInfoRow icon={Mail} v={v}>
                 <a
-                  href="mailto:integra.servicos.ma@gmail.com"
+                  href="mailto:contato@integraveiculos.com"
                   style={{ color: v.text, textDecoration: "none" }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = v.heading)}
                   onMouseLeave={(e) => (e.currentTarget.style.color = v.text)}
                 >
-                  integra.servicos.ma@gmail.com
+                  contato@integraveiculos.com
                 </a>
               </FooterInfoRow>
               <FooterInfoRow icon={Phone} v={v}>
                 <a
-                  href="tel:+559632765565"
+                  href="tel:+559820168515"
                   style={{ color: v.text, textDecoration: "none" }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = v.heading)}
                   onMouseLeave={(e) => (e.currentTarget.style.color = v.text)}
                 >
-                  (96) 3276-5565
+                  (98) 2016-8515
                 </a>
               </FooterInfoRow>
             </div>

@@ -41,7 +41,7 @@ export function ProductCTA({ vehicleName }: ProductCTAProps) {
           <Button variant="dark" onClick={handleContact}>
             Solicitar orçamento
           </Button>
-          <Button variant="light" href="https://web.whatsapp.com/" target="_blank">
+          <Button variant="light" href="https://wa.me/559820168515?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank">
             Entrar em contato
           </Button>
         </div>

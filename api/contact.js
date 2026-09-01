@@ -26,8 +26,8 @@ export default async function handler(req, res) {
   // precisa ser o endereço de teste deles (onboarding@resend.dev) — troque
   // pelo seu domínio (ex: "Integra <contato@integraveiculos.com.br>")
   // assim que verificar o domínio no painel do Resend.
-  const FROM_EMAIL = process.env.CONTACT_FROM_EMAIL || "Integra Site <onboarding@resend.dev>";
-  const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "integra.servicos.ma@gmail.com";
+  const FROM_EMAIL = process.env.CONTACT_FROM_EMAIL || "Integra Site <contato@integraveiculos.com>";
+  const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "contato@integraveiculos.com";
 
   if (!RESEND_API_KEY) {
     console.error("RESEND_API_KEY não configurada nas variáveis de ambiente da Vercel.");

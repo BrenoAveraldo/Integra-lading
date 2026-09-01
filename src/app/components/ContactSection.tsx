@@ -3,7 +3,7 @@ import { Send, CheckCircle2 } from "lucide-react";
 import { LocationSection } from "./LocationSection";
 
 
-const CONTACT_EMAIL = "Brenoaveraldo@hotmail.com";
+const CONTACT_EMAIL = "contato@integraveiculos.com";
 
 interface ContactFormState {
   name: string;
