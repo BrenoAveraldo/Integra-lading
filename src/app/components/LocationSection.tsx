@@ -3,7 +3,7 @@ import { SectionTag } from "./shared/SectionTag";
 
 const ADDRESS = " BR 135 KM 6,4 S/N VILA SARNEY MARACANÃ, São Luís - MA. CEP: 65095-602";
 const PHONE = "(98) 2016-8515";
-const HOURS = ["Segunda a sexta: 07:40 às 17:30"];
+const HOURS = ["Segunda a sexta: 07:40h às 17:30h"];
 const MAPS_EMBED_SRC =  "https://www.google.com/maps?q=-2.6337000,-44.2662000&output=embed";
 
 export function LocationSection() {

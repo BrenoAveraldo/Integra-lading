@@ -1,6 +1,6 @@
 import integraLogo from "../../imports/images/Logo/INTEGRA.png";
 import { MapPin, Mail, Phone, Clock, Instagram, Linkedin, Youtube, ArrowUp } from "lucide-react";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 import { useNavigation } from "../NavigationContext";
 import { WhatsappIcon } from "./shared/WhatsappIcon";
 
@@ -83,10 +83,26 @@ export function Footer({ variant = "light" }: FooterProps) {
   const v = VARIANTS[variant];
   const { navigateToHref } = useNavigation();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollTop = () => {
     navigate("/");
     setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 60);
+  };
+
+  // Os links de "Navegação" apontam para âncoras da Home (#sobre, #veiculos,
+  // #servicos). Como o Footer aparece em TODAS as páginas do site (inclusive
+  // /tratores, /veiculo/:slug etc.), chamar navigateToHref direto só
+  // funcionava quando já se estava na Home — em qualquer outra página não
+  // acontecia nada. Aqui replicamos o mesmo tratamento do Navbar: se não
+  // estiver na Home, navega pra lá primeiro e só então troca de aba/rola.
+  const handleNavLink = (href: string) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => navigateToHref(href), 60);
+    } else {
+      navigateToHref(href);
+    }
   };
 
   return (
@@ -209,7 +225,7 @@ export function Footer({ variant = "light" }: FooterProps) {
               ].map((link) => (
                 <li key={link.label}>
                   <button
-                    onClick={() => navigateToHref(link.href)}
+                    onClick={() => handleNavLink(link.href)}
                     style={{
                       background: "none",
                       border: "none",
@@ -234,8 +250,7 @@ export function Footer({ variant = "light" }: FooterProps) {
           {/* Horário de atendimento */}
           <FooterColumn title="Atendimento" v={v}>
             <FooterInfoRow icon={Clock} v={v}>
-              Segunda a sexta: 8h às 18h<br />
-              Sábado: 8h às 12h
+              Segunda a sexta: 07:40h às 17:30h<br />
             </FooterInfoRow>
           </FooterColumn>
         </div>
