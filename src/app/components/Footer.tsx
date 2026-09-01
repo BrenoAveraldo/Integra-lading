@@ -70,7 +70,7 @@ const SOCIAL_LINKS = [
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/integraveiculos" },
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
   { icon: Youtube, label: "YouTube", href: "https://youtube.com" },
-  { icon: WhatsappIcon, label: "WhatsApp", href: "https://wa.me/559820168515?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es./" },
+  { icon: WhatsappIcon, label: "WhatsApp", href: "https://wa.me/559820168515?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." },
 ];
 
 const PRODUCT_LINES = ["Caminhões Agrale", "Ônibus", "Tratores Agrale", "Utilitários Marruá"];

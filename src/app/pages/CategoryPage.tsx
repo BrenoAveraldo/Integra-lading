@@ -18,21 +18,41 @@ export function CategoryPage() {
     <div style={{ background: "#fff" }}>
       <Breadcrumb items={[{ label: "Início", to: "/" }, { label: data.name }]} />
 
+      {/* estilos responsivos só pro hero da categoria */}
+      <style>{`
+        .category-hero-grid {
+          display: grid;
+          grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+          align-items: center;
+          gap: 32px;
+          min-height: 360px;
+        }
+        @media (max-width: 860px) {
+          .category-hero-grid {
+            grid-template-columns: 1fr;
+            min-height: unset;
+            text-align: center;
+          }
+          .category-hero-image-wrap {
+            padding: 0 0 40px !important;
+          }
+          .category-hero-text {
+            padding: 48px 0 0 !important;
+          }
+        }
+      `}</style>
+
       {/* Hero da categoria */}
       <div style={{ background: "#1a1a1a" }}>
         <div
+          className="category-hero-grid"
           style={{
             maxWidth: 1280,
             margin: "0 auto",
             padding: "0 24px",
-            display: "grid",
-            gridTemplateColumns: "minmax(320px, 0.8fr) minmax(450px, 1.2fr)",
-            alignItems: "center",
-            gap: 32,
-            minHeight: 360,
           }}
         >
-          <div style={{ padding: "80px 0" }}>
+          <div className="category-hero-text" style={{ padding: "80px 0" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
               <span style={{ display: "block", width: 32, height: 2, background: "#C8102E" }} />
               <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "#C8102E", fontFamily: "'Open Sans', sans-serif" }}>
@@ -54,11 +74,12 @@ export function CategoryPage() {
               {data.name}
             </h1>
             <p style={{ color: "#C8102E", fontWeight: 700, marginBottom: 18, fontFamily: "'Poppins', sans-serif" }}>{data.tagline}</p>
-            <p style={{ color: "rgba(255,255,255,0.75)", lineHeight: 1.8, fontSize: "0.95rem", maxWidth: 480, fontFamily: "'Open Sans', sans-serif" }}>
+            <p style={{ color: "rgba(255,255,255,0.75)", lineHeight: 1.8, fontSize: "0.95rem", maxWidth: 480, margin: "0 auto", fontFamily: "'Open Sans', sans-serif" }}>
               {data.description}
             </p>
           </div>
           <div
+            className="category-hero-image-wrap"
             style={{
               display: "flex",
               justifyContent: "center",

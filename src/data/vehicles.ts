@@ -33,7 +33,7 @@ import ca11000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 11.000 GÁS.p
 import ca15000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 15.000.png";
 import ca18000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 18.000.png";
 import caEXT4x4 from "../imports/images/caminhao/Caminhão Agrale EXT 4x4 (Truck Home).png";
-import CAMINHAOCAPA from "../imports/images/caminhao/CAMINHAO-1.png";
+import CAMINHAOCAPA from "../imports/images/caminhao/caminhao capa.png";
 
 
 // Ônibus / Chassis
@@ -52,7 +52,7 @@ import MA11gasgaleria3 from "../imports/images/onibus/m11 - galeria2.jpg"
 import MA11gasgaleria4 from "../imports/images/onibus/m11 - galeria3.jpg"
 import MA11gasgaleria from "../imports/images/onibus/m11 - galeria4.jpg"
 import MA11gasgaleria5 from "../imports/images/onibus/m11 - galeria5.jpg"
-import ONIBUSCAPA from "../imports/images/onibus/CHASSIS-3.png"
+import ONIBUSCAPA from "../imports/images/onibus/onibus (2).png"
 
 // Tratores
 import trator4125 from "../imports/images/trator/TRATOR-4125-2.png";
@@ -117,7 +117,7 @@ import trator72155 from "../imports/images/trator/trator7215-galeria.jpg";
 import trator72152 from "../imports/images/trator/trator7215-galeria2.jpg";
 import trator72153 from "../imports/images/trator/trator7215-galeria3.jpg";
 import trator72154 from "../imports/images/trator/trator7215-galeria4.jpg";
-import TRATORCAPA from "../imports/images/trator/TRATOR-2.png";
+import TRATORCAPA from "../imports/images/trator/trator.png";
 
 
 // Marruá
@@ -217,7 +217,7 @@ import AM23ambulancia8 from "../imports/images/marrua/AM23 (8).jpg";
 import AM23ambulancia9 from "../imports/images/marrua/AM23 (9).jpg";
 import AM23ambulancia10 from "../imports/images/marrua/AM23 (10).jpg";
 import AM23ambulancia11 from "../imports/images/marrua/AM23 (11).jpg";
-import MARRUACAPA from "../imports/images/marrua/MARRUA-3.png";
+import MARRUACAPA from "../imports/images/marrua/marrua capa.png";
 
 
 
