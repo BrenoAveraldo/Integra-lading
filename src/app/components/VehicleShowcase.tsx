@@ -11,6 +11,7 @@ import VIDEOCAMINAO from "../../imports/videos/VIDEO-AGRALE-CAMINAO.mp4";
 import VIDEOCHASSI from "../../imports/videos/VIDEO-AGRALE-CHASSIS.mp4";
 import VIDEOTRATOR from "../../imports/videos/VIDEO-AGRALE-TRATOR.mp4";
 import VIDEOMARRUA from "../../imports/videos/VIDEO-AGRALE-MARRUA.mp4";
+import todosJuntos from "../../imports/images/Logo/FOTO-PRODUTOS-JUNTOS.png";
 
 type Category = "caminhoes" | "Onibus" | "tratores" | "marrua";
 
@@ -163,9 +164,23 @@ export function VehicleShowcase() {
               <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "#C8102E", fontFamily: "'Open Sans', sans-serif" }}>PRODUTOS</span>
               <span style={{ display: "block", width: 36, height: 2, background: "#C8102E" }} />
             </div>
-            <h2 style={{ color: "#fff", fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "-0.01em", marginBottom: 8, fontFamily: "'Poppins', sans-serif" }}>
+            <h2 style={{ color: "#fff", fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "-0.01em", marginBottom: 20, fontFamily: "'Poppins', sans-serif" }}>
               Soluções completas para diferentes necessidades
             </h2>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <img
+  src={todosJuntos}
+  alt="Linha de produtos Agrale da Integra Veículos"
+  style={{
+    width: "100%",
+    height: "clamp(220px, 43vw, 550px)",
+    objectFit: "cover",
+    borderRadius: 25,
+    display: "block",
+    boxShadow: "0 20px 60px rgba(238, 235, 235, 0.15)",
+  }}
+/>
+              </div>
           </div>
 
           {/* Category tabs */}

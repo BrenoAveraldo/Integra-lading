@@ -994,7 +994,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Versatilidade para operações civis e corporativas",
     image: marruaAM250Dupla,
     image2: marruaAM250Dupla,
-    datasheetUrl: "/datasheets/am250-cabine-simples-atualizado - fixa tecnica.pdf",
+    datasheetUrl: "/datasheets/am250-cabine-dupla-atualizado - fixa tecnica.pdf",
     dimensionsUrl: "/dimensions/AM250.jpg",
     gallery: [am200cabinedupla, am200cabinedupla2, am200cabinedupla3 ,am200cabinedupla4 ,am200cabinedupla5 ,am200cabinedupla6 ,am200cabinedupla7 ,am200cabinedupla8 ,am200cabinedupla9 ,am200cabinedupla10,am200cabinedupla11,am200cabinedupla12 ,am200cabinedupla13 ,am200cabinedupla14 ,am200cabinedupla15 ,am200cabinedupla16 ,am200cabinedupla17 ,am200cabinedupla18,am200cabinedupla19],
     description:
