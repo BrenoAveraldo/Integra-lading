@@ -553,7 +553,7 @@ export const VEHICLES: Vehicle[] = [
       "Torque": "1.200 Nm / 1.200 - 1.500 rpm",
       "Peso Bruto Total (PBT)": "Legal: 23.000 Kg / Técnico: 25.600 Kg",
       "Capacidade máxima de tração (CMT)": "35.000 Kg",
-      "Tanque de combustível": "300 L 210 L (Opcional",
+      "Tanque de combustível": "300 L 210 L (Opcional)",
     },
     highlights: [
       "Motor Cummins B6.7 de 310 cv, 1.200 Nm de torque e transmissão ZF de 9 marchas",
