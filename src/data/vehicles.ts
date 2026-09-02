@@ -32,6 +32,7 @@ import ca100004x4 from "../imports/images/caminhao/CAMINHÃO AGRALE A 10.000 4x4
 import ca11000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 11.000 GÁS.png";
 import ca15000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 15.000.png";
 import ca18000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 18.000.png";
+import ca26000 from "../imports/images/caminhao/CAMINHÃO AGRALE A 26.000.png";
 import caEXT4x4 from "../imports/images/caminhao/Caminhão Agrale EXT 4x4 (Truck Home).png";
 import CAMINHAOCAPA from "../imports/images/caminhao/caminhao capa.png";
 
@@ -90,8 +91,8 @@ import trator525galeria5 from "../imports/images/trator/trator 525 galeria 5.jpg
 import trator525galeria6 from "../imports/images/trator/trator 525 galeria 6.jpg";
 import trator540TX_galeria from "../imports/images/trator/trator540TXgaleria.jpg";
 import trator540TX_galeria2 from "../imports/images/trator/trator540TXgaleria2.jpg";
-import trator575  from "../imports/images/trator/575 galeria.jpg";
-import trator5752  from "../imports/images/trator/575 galeria 2.jpg";
+import trator575 from "../imports/images/trator/575 galeria.jpg";
+import trator5752 from "../imports/images/trator/575 galeria 2.jpg";
 import trator5753 from "../imports/images/trator/575 galeria 3.jpg";
 import trator5754 from "../imports/images/trator/575 galeria 4.jpg";
 import trator5755 from "../imports/images/trator/575 galeria 5.jpg";
@@ -366,7 +367,7 @@ export const VEHICLES: Vehicle[] = [
       "Completo de série",
     ],
   },
-{
+  {
     id: "caminhao-a-10000",
     category: "caminhoes",
     subcategory: "leves",
@@ -534,6 +535,34 @@ export const VEHICLES: Vehicle[] = [
       "Baixo custo operacional ao longo da vida útil",
     ],
   },
+  {
+    id: "caminhao-26000",
+    category: "caminhoes",
+    subcategory: "semipesados",
+    name: "Agrale 26.000",
+    slug: "agrale-26000",
+    tagline: "Robustez e capacidade de carga elevada",
+    image: ca26000,
+    image2: ca26000,
+    datasheetUrl: "/datasheets/caminh-o-agrale-a-26-000-atualizado.pdf",
+    description:
+      "O Agrale A 26.000 combina 310 cv de potência, 1.200 Nm de torque e transmissão ZF de 9 marchas para entregar força e produtividade nas mais diversas operações. Com PBT de até 23 toneladas e carga útil de até 16,28 toneladas, é a escolha para quem busca mais capacidade, segurança e eficiência no transporte.",
+    specifications: {
+      "Motorização": "CUMMINS B6.7",
+      "Potência": "310 cv (227 kW) a 2.300 rpm",
+      "Torque": "1.200 Nm / 1.200 - 1.500 rpm",
+      "Peso Bruto Total (PBT)": "Legal: 23.000 Kg / Técnico: 25.600 Kg",
+      "Capacidade máxima de tração (CMT)": "35.000 Kg",
+      "Tanque de combustível": "300 L 210 L (Opcional",
+    },
+    highlights: [
+      "Motor Cummins B6.7 de 310 cv, 1.200 Nm de torque e transmissão ZF de 9 marchas",
+      "Capacidade útil de carga técnica de até 18.880 kg e CMT de 35.000 kg",
+      "Pacote avançado de segurança com ESC, EBD, ATC e Assistente de Partida em Rampa (HSA)",
+      "Chassi versátil com 7,31 m de comprimento livre para encarroçamento",
+      "Motorização Euro VI / PROCONVE P8 com foco em sustentabilidade e eficiência",
+    ],
+  },
   // ================================ ÔNIBUS ================================
   {
     id: "chassi-ma-9-2",
@@ -613,7 +642,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Segurança e eficiência para o transporte de médio porte",
     image: MA172,
     image2: MA172,
-    datasheetUrl: "/datasheets/ma-17-0-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/ma-17-0-atualizado - fixa tecnica.pdf",
     description:
       "A solução Agrale para o transporte de passageiros em médio porte. Projetado para operações que exigem maior capacidade de transporte, o MA 17.0 combina robustez, conforto e eficiência em aplicações urbanas, rodoviárias ou de fretamento.",
     specifications: {
@@ -635,8 +664,8 @@ export const VEHICLES: Vehicle[] = [
     tagline: "O chassi que acompanha grandes jornadas",
     image: MA110,
     image2: MA110,
-    datasheetUrl: "/datasheets/ma-11-0-motorhome-atualizado - fixa tecnica.pdf", 
-    dimensionsUrl: "/dimensions/MA 10.png", 
+    datasheetUrl: "/datasheets/ma-11-0-motorhome-atualizado - fixa tecnica.pdf",
+    dimensionsUrl: "/dimensions/MA 10.png",
     description:
       "Chassi exclusivo para motorhome, une resistência, segurança e tecnologia. Projetado para atender às exigências de longas viagens e diferentes tipos de terreno, garantindo a liberdade do campismo com a confiança de quem entende de mobilidade.",
     specifications: {
@@ -660,7 +689,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Potência e robustez para o dia a dia do campo",
     image: trator4125,
     image2: trator4125,
-    datasheetUrl: "/datasheets/trator-4125-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-4125-atualizado - fixa tecnica.pdf",
     gallery: [trator4125galeria, trator4125galeria2, trator4125galeria3, trator4125galeria4, trator4125galeria5],
     description:
       "Trator compacto e versátil, o 4125 é indicado para pequenas e médias propriedades, unindo potência, economia de combustível e tecnologia para aumentar a produtividade no campo.",
@@ -681,7 +710,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Versão preparada para transporte de carga na propriedade",
     image: trator4125Cargo,
     image2: trator4125Cargo,
-     datasheetUrl: "/datasheets/trator-4125-cargo-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-4125-cargo-atualizado - fixa tecnica.pdf",
     gallery: [trator4125Cargo, trator4125, trator4125Coletor],
     description:
       "Versão do 4125 equipada para transporte de carga dentro da propriedade rural, mantendo a robustez e a economia que caracterizam a linha agrícola Agrale.",
@@ -690,7 +719,7 @@ export const VEHICLES: Vehicle[] = [
       "Torque": "9,43 kgf.m (92 N.m) a 1.600 RPM (NBR ISO 1585)",
       "Potência": "25,0 cv (18,44 kW) a 2.400 rpm",
       "Direção": "Hidráulica / Hidrostática",
-      "Capacidade de carga":"1.500 KG",
+      "Capacidade de carga": "1.500 KG",
       "Tanque Combustível": "39 L"
     },
     highlights: ["Configuração para transporte de carga", "Robustez comprovada", "Baixo custo de manutenção", "Versatilidade operacional"],
@@ -704,7 +733,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Projetado para operações de coleta",
     image: trator4125Coletor,
     image2: trator4125Coletor,
-    datasheetUrl: "/datasheets/trator-4125-cargo-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-4125-cargo-atualizado - fixa tecnica.pdf",
     gallery: [trator4125coletorgaleria4, trator4125coletorgaleria3, trator4125coletorgaleria2, trator4125coletorgaleria],
     description:
       "Versão especializada do 4125 para operações de coleta, combinando a mesma robustez mecânica da linha com adaptações voltadas à aplicação específica.",
@@ -727,8 +756,8 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Equilíbrio entre potência e agilidade",
     image: trator4233,
     image2: trator4233,
-    datasheetUrl: "/datasheets/trator-4233-atualizado  - fixa tecnica.pdf.pdf", 
-   gallery: [trator4233galeria, trator4233galeria2, trator4233galeria3],
+    datasheetUrl: "/datasheets/trator-4233-atualizado  - fixa tecnica.pdf.pdf",
+    gallery: [trator4233galeria, trator4233galeria2, trator4233galeria3],
     description:
       "O Trator 4233 entrega bom equilíbrio entre potência e agilidade, indicado para operações agrícolas de médio porte que exigem versatilidade de implementos.",
     specifications: {
@@ -748,7 +777,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Compacto e versátil para pequenas propriedades",
     image: trator525,
     image2: trator525,
-    datasheetUrl: "/datasheets/trator-525-atualizado  - ficha tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-525-atualizado  - ficha tecnica.pdf",
     gallery: [trator525galeria, trator525galeria2, trator525galeria3, trator525galeria4, trator525galeria5, trator525galeria6],
     description:
       "Compacto e ágil, o Trator 525 é indicado para pequenas propriedades, pomares e operações que exigem manobrabilidade sem abrir mão de robustez mecânica.",
@@ -769,7 +798,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Mais tecnologia para operações de precisão",
     image: trator540TX,
     image2: trator540TX,
-    datasheetUrl: "/datasheets/trator-540-xt-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-540-xt-atualizado - fixa tecnica.pdf",
     gallery: [trator540TX_galeria, trator540TX_galeria2],
     description:
       "O 540 XT traz tecnologia embarcada e conforto para o operador, indicado para propriedades que buscam mais precisão e produtividade nas operações do dia a dia.",
@@ -790,7 +819,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Compacto, ágil e potente",
     image: trator575Compact,
     image2: trator575Compact,
-    datasheetUrl: "/datasheets/trator-575-compact-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-575-compact-atualizado - fixa tecnica.pdf",
 
     gallery: [trator575, trator5752, trator5753, trator5754, trator5755],
     description:
@@ -814,8 +843,8 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Mais força para operações exigentes",
     image: trator575Super,
     image2: trator575Super,
-    datasheetUrl: "/datasheets/trator-575-super-atualizado - fixa tecnica.pdf", 
-    gallery: [super575, super5752, super5753 ,super5754 ,super5755],
+    datasheetUrl: "/datasheets/trator-575-super-atualizado - fixa tecnica.pdf",
+    gallery: [super575, super5752, super5753, super5754, super5755],
     description:
       "Versão Super da linha 575, com reforços mecânicos para operações mais exigentes, mantendo a economia e a confiabilidade que marcam a linha agrícola Agrale.",
     specifications: {
@@ -835,7 +864,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Potência intermediária para produtividade no campo",
     image: trator5105,
     image2: trator5105,
-    datasheetUrl: "/datasheets/trator-5105-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-5105-atualizado - fixa tecnica.pdf",
     gallery: [traot5105, traot51052, traot51053, traot51054, traot51055, traot51056, traot51057],
     description:
       "O Trator 5105 oferece potência intermediária, ideal para operações de preparo de solo, plantio e tração de implementos de médio porte.",
@@ -859,7 +888,7 @@ export const VEHICLES: Vehicle[] = [
     image: trator6185,
     image2: trator6185,
     gallery: [trator61856, trator61855, trator61854, trator61853, trator61852, trator61857],
-    datasheetUrl: "/datasheets/trator-6185-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-6185-atualizado - fixa tecnica.pdf",
     description:
       "Com alta potência, o Trator 6185 é indicado para grandes propriedades e operações que demandam tração de implementos pesados com eficiência.",
     specifications: {
@@ -882,7 +911,7 @@ export const VEHICLES: Vehicle[] = [
     image: trator7215,
     image2: trator7215,
     gallery: [trator72154, trator72155, trator72153, trator72152],
-    datasheetUrl: "/datasheets/trator-7215-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-7215-atualizado - fixa tecnica.pdf",
     description:
       "Modelo topo de linha da Agrale, o 7215 entrega máxima potência e tecnologia para grandes propriedades, com foco em produtividade e economia operacional.",
     specifications: {
@@ -904,7 +933,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Versatilidade para a movimentação de cargas",
     image: tratorRebocador4100,
     image2: tratorRebocador4100,
-    datasheetUrl: "/datasheets/trator-rebocador-4100-industrial-atualizado - fixa tecnica.pdf", 
+    datasheetUrl: "/datasheets/trator-rebocador-4100-industrial-atualizado - fixa tecnica.pdf",
     gallery: [tratorIndustrial, tratorHero],
     description:
       "A linha de tratores industriais Agrale oferece força, eficiência e confiabilidade para a movimentação de cargas em ambientes industriais, logísticos e operações de pátio.",
@@ -925,7 +954,7 @@ export const VEHICLES: Vehicle[] = [
     tagline: "Movimentação de cargas com menor emissão",
     image: tratorRebocador4100gas,
     image2: tratorRebocador4100gas,
-    datasheetUrl: "/datasheets/trator-agrale-4100-gas.pdf", 
+    datasheetUrl: "/datasheets/trator-agrale-4100-gas.pdf",
     gallery: [tratorHero, tratorIndustrial],
     description:
       "Versão a gás do Rebocador 4100, indicada para operações industriais e logísticas internas que buscam reduzir emissões sem abrir mão de força e confiabilidade.",
@@ -996,7 +1025,7 @@ export const VEHICLES: Vehicle[] = [
     image2: marruaAM250Dupla,
     datasheetUrl: "/datasheets/am250-cabine-dupla-atualizado - fixa tecnica.pdf",
     dimensionsUrl: "/dimensions/AM250.jpg",
-    gallery: [am200cabinedupla, am200cabinedupla2, am200cabinedupla3 ,am200cabinedupla4 ,am200cabinedupla5 ,am200cabinedupla6 ,am200cabinedupla7 ,am200cabinedupla8 ,am200cabinedupla9 ,am200cabinedupla10,am200cabinedupla11,am200cabinedupla12 ,am200cabinedupla13 ,am200cabinedupla14 ,am200cabinedupla15 ,am200cabinedupla16 ,am200cabinedupla17 ,am200cabinedupla18,am200cabinedupla19],
+    gallery: [am200cabinedupla, am200cabinedupla2, am200cabinedupla3, am200cabinedupla4, am200cabinedupla5, am200cabinedupla6, am200cabinedupla7, am200cabinedupla8, am200cabinedupla9, am200cabinedupla10, am200cabinedupla11, am200cabinedupla12, am200cabinedupla13, am200cabinedupla14, am200cabinedupla15, am200cabinedupla16, am200cabinedupla17, am200cabinedupla18, am200cabinedupla19],
     description:
       "Com cabine dupla, o AM250 é indicado para operações que exigem transporte de equipe e carga simultaneamente, mantendo a tração 4x4 e a robustez da linha Marruá.",
     specifications: {
@@ -1004,7 +1033,7 @@ export const VEHICLES: Vehicle[] = [
       "Potência": "170 cv",
       "Torque": "600 Nm a 1.200 - 1.900 RPM",
       "Peso Bruto Total (PBT):": "5.700 Kg",
-      "Tanque de combustível":" 95 L",
+      "Tanque de combustível": " 95 L",
       "Lugares": "5 pessoas"
     },
     highlights: ["Cabine dupla para equipe e carga", "Tração 4x4", "Suspensão de longo curso", "Robustez militar adaptada ao civil"],
@@ -1042,7 +1071,7 @@ export const VEHICLES: Vehicle[] = [
     image: marruaAM11Reconhecimento,
     image2: marruaAM11Reconhecimento,
     datasheetUrl: "/datasheets/viatura-militar-br-AM11-reconhecimento-atualizado - fixa tecnica.pdf",
-    gallery: [ AM11galeria ,AM11galeria1  ,AM11galeria2  ,AM11galeria3  ,AM11galeria4  ,AM11galeria5  ,AM11galeria6  ,AM11galeria7  ,AM11galeria8  ,AM11galeria9  ,AM11galeria10 ,AM11galeria11 ,AM11galeria12 ,AM11galeria13 ,AM11galeria14 ,AM11galeria15 ,AM11galeria16 ,AM11galeria17 ,AM11galeria18],
+    gallery: [AM11galeria, AM11galeria1, AM11galeria2, AM11galeria3, AM11galeria4, AM11galeria5, AM11galeria6, AM11galeria7, AM11galeria8, AM11galeria9, AM11galeria10, AM11galeria11, AM11galeria12, AM11galeria13, AM11galeria14, AM11galeria15, AM11galeria16, AM11galeria17, AM11galeria18],
     description:
       "Desenvolvido para missões de reconhecimento, o AM11 combina tração 4x4, suspensão de longo curso e confiabilidade mecânica para operar em condições operacionais críticas.",
     specifications: {
@@ -1063,7 +1092,7 @@ export const VEHICLES: Vehicle[] = [
     image: marruaAM21VTNE,
     image2: marruaAM21VTNE,
     datasheetUrl: "/datasheets/viatura-militar-br-AM21---vtne-ton-atualizado - fixa tecnica.pdf",
-    gallery: [AM21galeria  ,AM21galeria1  ,AM21galeria2  ,AM21galeria3  ,AM21galeria4  ,AM21galeria5  ,AM21galeria6  ,AM21galeria7  ,AM21galeria8  ,AM21galeria9  ,AM21galeria10 ,AM21galeria11 ,AM21galeria12 ,AM21galeria13 ,AM21galeria14 ,AM21galeria15],
+    gallery: [AM21galeria, AM21galeria1, AM21galeria2, AM21galeria3, AM21galeria4, AM21galeria5, AM21galeria6, AM21galeria7, AM21galeria8, AM21galeria9, AM21galeria10, AM21galeria11, AM21galeria12, AM21galeria13, AM21galeria14, AM21galeria15],
     description:
       "Veículo de Transporte Não Especializado (VTNE) com capacidade de 3/4 de tonelada, indicado para transporte de tropas, equipamentos e apoio logístico em operações militares.",
     specifications: {
@@ -1107,7 +1136,7 @@ export const VEHICLES: Vehicle[] = [
     image: marruaAM23VTNE,
     image2: marruaAM23VTNE,
     datasheetUrl: "/datasheets/viatura-militar-br-am23---vtne-ton-atualizado - fixa tecnica.pdf",
-    gallery: [AM23ambulancia ,AM23ambulancia2  ,AM23ambulancia3  ,AM23ambulancia4  ,AM23ambulancia5  ,AM23ambulancia6  ,AM23ambulancia7  ,AM23ambulancia8  ,AM23ambulancia9  ,AM23ambulancia10 ,AM23ambulancia11],
+    gallery: [AM23ambulancia, AM23ambulancia2, AM23ambulancia3, AM23ambulancia4, AM23ambulancia5, AM23ambulancia6, AM23ambulancia7, AM23ambulancia8, AM23ambulancia9, AM23ambulancia10, AM23ambulancia11],
     description:
       "Evolução da linha VTNE, o AM23 mantém a capacidade de 3/4 de tonelada com atualizações mecânicas que reforçam confiabilidade e desempenho em operações táticas.",
     specifications: {
