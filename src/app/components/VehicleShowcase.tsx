@@ -169,17 +169,18 @@ export function VehicleShowcase() {
             </h2>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                 <img
-  src={todosJuntos}
-  alt="Linha de produtos Agrale da Integra Veículos"
-  style={{
-    width: "100%",
-    height: "clamp(220px, 43vw, 550px)",
-    objectFit: "cover",
-    borderRadius: 25,
-    display: "block",
-    boxShadow: "0 20px 60px rgba(238, 235, 235, 0.15)",
-  }}
-/>
+                  src={todosJuntos}
+                  loading="lazy"
+                  alt="Linha de produtos Agrale da Integra Veículos"
+                  style={{
+                    width: "100%",
+                    height: "clamp(220px, 43vw, 550px)",
+                    objectFit: "cover",
+                    borderRadius: 25,
+                    display: "block",
+                    boxShadow: "0 20px 60px rgba(238, 235, 235, 0.15)",
+                  }}
+                />
               </div>
           </div>
 
