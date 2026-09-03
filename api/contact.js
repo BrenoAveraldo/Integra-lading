@@ -168,7 +168,7 @@ function buildEmailHtml({ name, email, phone, message }) {
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0">
                       <tr>
                         <td style="background:#ffffff; border-radius:6px; padding:8px 14px;">
-                          <img src="https://integraveiculos.com/integra.png" alt="Integra Veículos" style="display:block;height:24px;width:auto;border:0;"/>
+                          <img src="https://integraveiculos.com/integra-logo.png" alt="Integra Veículos" style="display:block;height:24px;width:auto;border:0;"/>
                         </td>
                       </tr>
                     </table>
