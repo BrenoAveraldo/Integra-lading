@@ -136,7 +136,7 @@ export function CategoryPage() {
               }}
             >
               <div style={{ padding: "28px 32px", display: "flex", justifyContent: "center", alignItems: "center", minHeight: 180 }}>
-                <img src={sub.image} alt={sub.name} style={{ maxWidth: "100%", maxHeight: 160, objectFit: "contain" }} />
+                <img src={sub.image} alt={sub.name} loading="lazy" style={{ maxWidth: "100%", maxHeight: 160, objectFit: "contain" }} />
               </div>
               <div style={{ padding: "22px 24px 26px" }}>
                 <div style={{ marginTop: -40, marginBottom: 16 }}>

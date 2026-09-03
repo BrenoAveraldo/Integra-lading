@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router";
+import { useIsMobile } from "../hooks/useIsMobile";
 import { useNavigation } from "../NavigationContext";
 import { Button } from "./shared/Button";
 import busHero from "../../imports/images/onibus/Onibus hero.png";
@@ -51,6 +52,13 @@ const SLIDES = [
 const AUTOPLAY_MS = 6000;
 
 export function HeroSection() {
+  const isMobile = useIsMobile();
+  // Altura real do Navbar: 68px de barra branca sempre, +37px da faixa
+  // escura de produtos que só aparece fora do mobile. Sem descontar isso,
+  // "100vh" no Hero + a altura do Navbar ficavam mais altos que a tela,
+  // empurrando as setas de navegação e a barra de progresso pra baixo da
+  // dobra em celulares com tela mais baixa (ex: iPhone SE).
+  const navbarHeight = isMobile ? 68 : 105;
   const [current, setCurrent] = useState(0);
   const [fading, setFading] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -103,7 +111,7 @@ export function HeroSection() {
     <section
       style={{
         position: "relative",
-        height: "100vh",
+        height: `calc(100vh - ${navbarHeight}px)`,
         minHeight: 500,
         maxHeight: 900,
         overflow: "hidden",

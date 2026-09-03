@@ -160,30 +160,9 @@ function buildEmailHtml({ name, email, phone, message }) {
                 border="0"
               >
                 <tr>
-
                   <td>
-                    <div style="
-                      font-size:24px;
-                      line-height:1;
-                      font-weight:800;
-                      letter-spacing:1px;
-                      color:#ffffff;
-                    ">
-                      INTEGRA
-                    </div>
-
-                    <div style="
-                      margin-top:8px;
-                      font-size:11px;
-                      line-height:1.4;
-                      letter-spacing:1.5px;
-                      text-transform:uppercase;
-                      color:#aaaaaa;
-                    ">
-                      Veículos e soluções
-                    </div>
+                     <img src="https://integraveiculos.com/integra.png" alt="Integra Veículos"  style="display:block;height:40px;width:auto;border:0;"/>
                   </td>
-
                   <td align="right">
                     <div style="
                       display:inline-block;
@@ -341,9 +320,8 @@ function buildEmailHtml({ name, email, phone, message }) {
               </table>
 
 
-              ${
-                safePhone
-                  ? `
+              ${safePhone
+      ? `
               <!-- PHONE -->
               <table
                 role="presentation"
@@ -398,8 +376,8 @@ function buildEmailHtml({ name, email, phone, message }) {
                 </tr>
               </table>
               `
-                  : ""
-              }
+      : ""
+    }
 
             </td>
           </tr>

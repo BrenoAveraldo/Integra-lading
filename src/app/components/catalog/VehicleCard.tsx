@@ -44,6 +44,7 @@ export function VehicleCard({ vehicle }: VehicleCardProps) {
         <img
           src={vehicle.image}
           alt={vehicle.name}
+          loading="lazy"
           style={{ maxWidth: "100%", maxHeight: 190, objectFit: "contain" }}
         />
       </div>

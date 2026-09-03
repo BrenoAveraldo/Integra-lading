@@ -50,6 +50,7 @@ export function CategoriesGrid() {
                 <img
                   src={cat.heroImage}
                   alt={cat.name}
+                  loading="lazy"
                   style={{
                     position: "absolute",
                     inset: 0,
