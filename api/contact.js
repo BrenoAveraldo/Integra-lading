@@ -161,7 +161,17 @@ function buildEmailHtml({ name, email, phone, message }) {
               >
                 <tr>
                   <td>
-                     <img src="https://integraveiculos.com/integra.png" alt="Integra Veículos"  style="display:block;height:40px;width:auto;border:0;"/>
+                    <!-- A logo tem texto preto sobre fundo transparente, então
+                         colocamos numa "plaquinha" branca — igual o rodapé do
+                         próprio site já faz sobre o fundo vermelho — pra não
+                         sumir contra o cabeçalho escuro do e-mail. -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td style="background:#ffffff; border-radius:6px; padding:8px 14px;">
+                          <img src="https://integraveiculos.com/integra.png" alt="Integra Veículos" style="display:block;height:24px;width:auto;border:0;"/>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                   <td align="right">
                     <div style="
