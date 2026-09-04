@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { AppRoutes } from "./routes/routes";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { WhatsAppFloat } from "./components/WhatsAppFloat/WhatsAppFloat";
 
 function AppContent() {
   return (
@@ -18,6 +19,8 @@ function AppContent() {
       <Navbar />
       <AppRoutes />
       <Footer />
+      <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
