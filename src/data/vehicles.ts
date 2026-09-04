@@ -711,7 +711,7 @@ export const VEHICLES: Vehicle[] = [
     image: trator4125Cargo,
     image2: trator4125Cargo,
      datasheetUrl: "/datasheets/trator-4125-cargo-atualizado - fixa tecnica.pdf", 
-    gallery: [trator4125Cargo, trator4125, trator4125Coletor],
+    gallery: [trator4125Cargo],
     description:
       "Versão do 4125 equipada para transporte de carga dentro da propriedade rural, mantendo a robustez e a economia que caracterizam a linha agrícola Agrale.",
     specifications: {
@@ -934,7 +934,6 @@ export const VEHICLES: Vehicle[] = [
     image: tratorRebocador4100,
     image2: tratorRebocador4100,
     datasheetUrl: "/datasheets/trator-rebocador-4100-industrial-atualizado - fixa tecnica.pdf", 
-    gallery: [tratorIndustrial, tratorHero],
     description:
       "A linha de tratores industriais Agrale oferece força, eficiência e confiabilidade para a movimentação de cargas em ambientes industriais, logísticos e operações de pátio.",
     specifications: {
@@ -955,7 +954,6 @@ export const VEHICLES: Vehicle[] = [
     image: tratorRebocador4100gas,
     image2: tratorRebocador4100gas,
     datasheetUrl: "/datasheets/trator-agrale-4100-gas.pdf", 
-    gallery: [tratorHero, tratorIndustrial],
     description:
       "Versão a gás do Rebocador 4100, indicada para operações industriais e logísticas internas que buscam reduzir emissões sem abrir mão de força e confiabilidade.",
     specifications: {
